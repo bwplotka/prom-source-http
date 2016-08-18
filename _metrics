@@ -1,0 +1,1992 @@
+# HELP improbable_persistence_snapshots_attempted Counter of the snapshot attempts
+# TYPE improbable_persistence_snapshots_attempted counter
+improbable_persistence_snapshots_attempted{} 0.0
+# HELP improbable_deployment_health_good Number of times a good thing happened.
+# TYPE improbable_deployment_health_good counter
+improbable_deployment_health_good{} 2.0
+# HELP improbable_tinyengine_player_first_seen_latency_sec Time in seconds between the start of a client engine and the time it sees its player for the first time
+# TYPE improbable_tinyengine_player_first_seen_latency_sec histogram
+improbable_tinyengine_player_first_seen_latency_sec_bucket{le="0.01",} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_bucket{le="0.1",} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_bucket{le="0.5",} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_bucket{le="1.0",} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_bucket{le="2.0",} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_bucket{le="5.0",} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_bucket{le="10.0",} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_bucket{le="30.0",} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_bucket{le="60.0",} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_bucket{le="120.0",} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_bucket{le="180.0",} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_bucket{le="300.0",} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_bucket{le="600.0",} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_bucket{le="1200.0",} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_bucket{le="+Inf",} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_count{} 0.0
+improbable_tinyengine_player_first_seen_latency_sec_sum{} 0.0
+# HELP improbable_bridge_roundtrip_latency_to_entity Histogram of roundtrip latency between Bridge and Entity (seconds).
+# TYPE improbable_bridge_roundtrip_latency_to_entity histogram
+improbable_bridge_roundtrip_latency_to_entity_bucket{le="5.0E-4",} 0.0
+improbable_bridge_roundtrip_latency_to_entity_bucket{le="0.001",} 0.0
+improbable_bridge_roundtrip_latency_to_entity_bucket{le="0.002",} 1.0
+improbable_bridge_roundtrip_latency_to_entity_bucket{le="0.004",} 1.0
+improbable_bridge_roundtrip_latency_to_entity_bucket{le="0.008",} 2.0
+improbable_bridge_roundtrip_latency_to_entity_bucket{le="0.016",} 2.0
+improbable_bridge_roundtrip_latency_to_entity_bucket{le="0.05",} 2.0
+improbable_bridge_roundtrip_latency_to_entity_bucket{le="0.1",} 2.0
+improbable_bridge_roundtrip_latency_to_entity_bucket{le="0.2",} 2.0
+improbable_bridge_roundtrip_latency_to_entity_bucket{le="0.5",} 2.0
+improbable_bridge_roundtrip_latency_to_entity_bucket{le="1.0",} 2.0
+improbable_bridge_roundtrip_latency_to_entity_bucket{le="5.0",} 2.0
+improbable_bridge_roundtrip_latency_to_entity_bucket{le="10.0",} 2.0
+improbable_bridge_roundtrip_latency_to_entity_bucket{le="60.0",} 2.0
+improbable_bridge_roundtrip_latency_to_entity_bucket{le="+Inf",} 2.0
+improbable_bridge_roundtrip_latency_to_entity_count{} 2.0
+improbable_bridge_roundtrip_latency_to_entity_sum{} 0.006819654
+# HELP improbable_engine_startup_time The time taken between EngineLifeCycleManager starting an engine and the engine connects (in seconds)This can be used to tune DEFAULT_ENGINE_START_FIRST_RETRY_SECONDS and DEFAULT_ENGINE_START_TIMEOUT_SECONDS
+# TYPE improbable_engine_startup_time histogram
+improbable_engine_startup_time_bucket{platform="TinyPhysicsEngine",le="1.0",} 1.0
+improbable_engine_startup_time_bucket{platform="TinyPhysicsEngine",le="5.0",} 1.0
+improbable_engine_startup_time_bucket{platform="TinyPhysicsEngine",le="10.0",} 1.0
+improbable_engine_startup_time_bucket{platform="TinyPhysicsEngine",le="30.0",} 1.0
+improbable_engine_startup_time_bucket{platform="TinyPhysicsEngine",le="60.0",} 1.0
+improbable_engine_startup_time_bucket{platform="TinyPhysicsEngine",le="120.0",} 1.0
+improbable_engine_startup_time_bucket{platform="TinyPhysicsEngine",le="180.0",} 1.0
+improbable_engine_startup_time_bucket{platform="TinyPhysicsEngine",le="240.0",} 1.0
+improbable_engine_startup_time_bucket{platform="TinyPhysicsEngine",le="300.0",} 1.0
+improbable_engine_startup_time_bucket{platform="TinyPhysicsEngine",le="600.0",} 1.0
+improbable_engine_startup_time_bucket{platform="TinyPhysicsEngine",le="1200.0",} 1.0
+improbable_engine_startup_time_bucket{platform="TinyPhysicsEngine",le="+Inf",} 1.0
+improbable_engine_startup_time_count{platform="TinyPhysicsEngine",} 1.0
+improbable_engine_startup_time_sum{platform="TinyPhysicsEngine",} 0.0
+# HELP improbable_bridge_upstream_state_update_message Counter of state update messages per type sent from the engine.
+# TYPE improbable_bridge_upstream_state_update_message counter
+improbable_bridge_upstream_state_update_message{engine_platform="TinyPhysicsEngine",message_type="PositionUpdate",prefab="Unknown",} 1.0
+improbable_bridge_upstream_state_update_message{engine_platform="TinyPhysicsEngine",message_type="RotationUpdate",prefab="Unknown",} 1.0
+improbable_bridge_upstream_state_update_message{engine_platform="TinyPhysicsEngine",message_type="RotationUpdate",prefab="Wandering Entity",} 6038.0
+improbable_bridge_upstream_state_update_message{engine_platform="TinyPhysicsEngine",message_type="PositionUpdate",prefab="Wandering Entity",} 5939.0
+improbable_bridge_upstream_state_update_message{engine_platform="TinyPhysicsEngine",message_type="PositionUpdate",prefab="Waypoint Follower",} 302.0
+# HELP improbable_bridge_oracle_bridge Number of bridges running.
+# TYPE improbable_bridge_oracle_bridge gauge
+improbable_bridge_oracle_bridge{} 1.0
+# HELP improbable_engine_overloaded_warning Number of times engine overloaded on stiffness recalculation.
+# TYPE improbable_engine_overloaded_warning counter
+# HELP improbable_deadlocks_deadlocks_detected Counter of the number of times a deadlock has been detected.
+# TYPE improbable_deadlocks_deadlocks_detected counter
+improbable_deadlocks_deadlocks_detected{} 0.0
+# HELP improbable_bridge_entities_per_bridge The number of entities that each bridge has information about. Acts as entities per client/fsim radius.
+# TYPE improbable_bridge_entities_per_bridge histogram
+improbable_bridge_entities_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="25.0",} 0.0
+improbable_bridge_entities_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="50.0",} 0.0
+improbable_bridge_entities_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="100.0",} 0.0
+improbable_bridge_entities_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="200.0",} 0.0
+improbable_bridge_entities_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="400.0",} 0.0
+improbable_bridge_entities_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="800.0",} 0.0
+improbable_bridge_entities_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="1600.0",} 0.0
+improbable_bridge_entities_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="3200.0",} 0.0
+improbable_bridge_entities_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="6400.0",} 0.0
+improbable_bridge_entities_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="12800.0",} 0.0
+improbable_bridge_entities_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="25600.0",} 0.0
+improbable_bridge_entities_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="51200.0",} 0.0
+improbable_bridge_entities_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="102400.0",} 0.0
+improbable_bridge_entities_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="+Inf",} 0.0
+improbable_bridge_entities_per_bridge_count{engine_platform="TinyPhysicsEngine",} 0.0
+improbable_bridge_entities_per_bridge_sum{engine_platform="TinyPhysicsEngine",} 0.0
+# HELP improbable_entity_actors_destroyed Number of Entity Actors destroyed.
+# TYPE improbable_entity_actors_destroyed counter
+improbable_entity_actors_destroyed{} 166.0
+# HELP improbable_pubsub_receives Number of publishes received from remote VMs.
+# TYPE improbable_pubsub_receives counter
+# HELP improbable_network_tcp_received_packets Counter of packets received from the given peer.
+# TYPE improbable_network_tcp_received_packets counter
+improbable_network_tcp_received_packets{link="ClientTinyPhysicsEngine",} 725.0
+improbable_network_tcp_received_packets{link="TinyPhysicsEngine",} 12295.0
+# HELP improbable_network_tcp_connected Number of instances that are currently connected.
+# TYPE improbable_network_tcp_connected gauge
+improbable_network_tcp_connected{link="ClientTinyPhysicsEngine",} 4.0
+improbable_network_tcp_connected{link="TinyPhysicsEngine",} 4.0
+# HELP improbable_user_exceptions_user_code_exception_count Number of exceptions occurring in user-level behaviour code
+# TYPE improbable_user_exceptions_user_code_exception_count counter
+improbable_user_exceptions_user_code_exception_count{} 0.0
+# HELP improbable_bridge_dynamic_entities_per_authoritative_bridge The number of dynamic entities that a bridge is sending state updates for. Sum across the entire system of bridges to get the total.
+# TYPE improbable_bridge_dynamic_entities_per_authoritative_bridge gauge
+# HELP improbable_grpc_client_calls_finished Number of gRPC client calls finished by method and outcome.
+# TYPE improbable_grpc_client_calls_finished counter
+improbable_grpc_client_calls_finished{method="improbable.platform.deployment.NodeService/List",outcome="success",} 7.0
+improbable_grpc_client_calls_finished{method="improbable.service.fabric.GlobalBrokerService/Ping",outcome="success",} 24.0
+improbable_grpc_client_calls_finished{method="improbable.platform.deployment.ModuleService/List",outcome="success",} 1.0
+improbable_grpc_client_calls_finished{method="improbable.fabric.internal.BridgeOracleInternalService/RequireWorker",outcome="success",} 8.0
+improbable_grpc_client_calls_finished{method="improbable.platform.inner.config.FabricFlagzService/List",outcome="success",} 1.0
+improbable_grpc_client_calls_finished{method="improbable.platform.inner.config.FabricWorkerFlagzService/List",outcome="success",} 1.0
+improbable_grpc_client_calls_finished{method="improbable.fabric.internal.scaling.ScalingStatsInternalService/GetScalingStats",outcome="success",} 20.0
+improbable_grpc_client_calls_finished{method="improbable.fabric.internal.ServiceDiscoveryInternalService/ListLocalServers",outcome="success",} 4.0
+improbable_grpc_client_calls_finished{method="improbable.platform.inner.config.DnsDiscoveryService/Register",outcome="success",} 13.0
+# HELP improbable_tinyengine_queue_processing Queue processing duration per tick in ns.
+# TYPE improbable_tinyengine_queue_processing summary
+improbable_tinyengine_queue_processing_count{} 405.0
+improbable_tinyengine_queue_processing_sum{} 0.0
+# HELP improbable_network_raknet_dropped_state_updates Number of state updates dropped due to QoS
+# TYPE improbable_network_raknet_dropped_state_updates counter
+# HELP improbable_routerProxy_message_deserialized Counter of the messages that have been deserialized.
+# TYPE improbable_routerProxy_message_deserialized counter
+# HELP improbable_logging_logged_warnings The number of times a warning was logged.
+# TYPE improbable_logging_logged_warnings counter
+improbable_logging_logged_warnings{} 0.0
+# HELP improbable_deployment_health_bad Number of times a bad thing happened.
+# TYPE improbable_deployment_health_bad counter
+improbable_deployment_health_bad{} 0.0
+# HELP improbable_bridge_downstream_message Counter of messages per type sent to the engine.
+# TYPE improbable_bridge_downstream_message counter
+improbable_bridge_downstream_message{engine_platform="TinyPhysicsEngine",message_type="TargetPositionUpdate",} 101.0
+improbable_bridge_downstream_message{engine_platform="TinyPhysicsEngine",message_type="OpCodesForSingleEntity",} 334.0
+improbable_bridge_downstream_message{engine_platform="TinyPhysicsEngine",message_type="AssetLoadRequest",} 4.0
+improbable_bridge_downstream_message{engine_platform="TinyPhysicsEngine",message_type="VelocityCheckUpdate",} 2.0
+improbable_bridge_downstream_message{engine_platform="TinyPhysicsEngine",message_type="ProximitySensorDataUpdate",} 284.0
+# HELP improbable_persistence_snapshot_entity_loaded_total The count of entities that have been loaded from a snapshot.
+# TYPE improbable_persistence_snapshot_entity_loaded_total counter
+# HELP improbable_entity_entity_query_count Number of entity query calls, with relative outcomes.
+# TYPE improbable_entity_entity_query_count counter
+improbable_entity_entity_query_count{locality="local",outcome="success",} 20.0
+improbable_entity_entity_query_count{locality="local",outcome="failure",} 0.0
+improbable_entity_entity_query_count{locality="global",outcome="failure",} 138.0
+improbable_entity_entity_query_count{locality="global",outcome="success",} 10.0
+# HELP grpc_client_completed Total number of RPCs completed on the client, regardless of success or failure.
+# TYPE grpc_client_completed counter
+grpc_client_completed{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",code="OK",} 20.0
+grpc_client_completed{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",code="OK",} 8.0
+grpc_client_completed{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",code="OK",} 4.0
+grpc_client_completed{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",code="OK",} 24.0
+# HELP improbable_network_tcp_congestion_control_limit_bps Congestion control limit in BPS inside the link for that peer.
+# TYPE improbable_network_tcp_congestion_control_limit_bps gauge
+improbable_network_tcp_congestion_control_limit_bps{link="ClientTinyPhysicsEngine",} 0.0
+improbable_network_tcp_congestion_control_limit_bps{link="TinyPhysicsEngine",} 0.0
+# HELP improbable_messaging_send Counter for messages sent to entities.
+# TYPE improbable_messaging_send counter
+# HELP improbable_pubsub_receive_local_fanout Local fanout size of publishes received remotely.
+# TYPE improbable_pubsub_receive_local_fanout counter
+# HELP improbable_bridge_module_bridge Counter of bridges per bridge module currently running.
+# TYPE improbable_bridge_module_bridge gauge
+improbable_bridge_module_bridge{guid="yoKv8zix",engine_platform="TinyPhysicsEngine",} 1.0
+# HELP improbable_engine_vm_size Total virtual memory size in use per platform
+# TYPE improbable_engine_vm_size histogram
+# HELP improbable_chunk_assignment_responses_not_willing The number of times a response indicated that the worker was not willing to take on work
+# TYPE improbable_chunk_assignment_responses_not_willing counter
+improbable_chunk_assignment_responses_not_willing{} 0.0
+# HELP improbable_entity_spatial_query_fanout Remote JVMs involved in spatial queries.
+# TYPE improbable_entity_spatial_query_fanout histogram
+improbable_entity_spatial_query_fanout_bucket{le="1.0",} 0.0
+improbable_entity_spatial_query_fanout_bucket{le="2.0",} 394.0
+improbable_entity_spatial_query_fanout_bucket{le="3.0",} 394.0
+improbable_entity_spatial_query_fanout_bucket{le="4.0",} 394.0
+improbable_entity_spatial_query_fanout_bucket{le="5.0",} 394.0
+improbable_entity_spatial_query_fanout_bucket{le="6.0",} 394.0
+improbable_entity_spatial_query_fanout_bucket{le="7.0",} 394.0
+improbable_entity_spatial_query_fanout_bucket{le="8.0",} 394.0
+improbable_entity_spatial_query_fanout_bucket{le="9.0",} 394.0
+improbable_entity_spatial_query_fanout_bucket{le="10.0",} 394.0
+improbable_entity_spatial_query_fanout_bucket{le="11.0",} 394.0
+improbable_entity_spatial_query_fanout_bucket{le="12.0",} 394.0
+improbable_entity_spatial_query_fanout_bucket{le="13.0",} 394.0
+improbable_entity_spatial_query_fanout_bucket{le="14.0",} 394.0
+improbable_entity_spatial_query_fanout_bucket{le="15.0",} 394.0
+improbable_entity_spatial_query_fanout_bucket{le="16.0",} 394.0
+improbable_entity_spatial_query_fanout_bucket{le="+Inf",} 394.0
+improbable_entity_spatial_query_fanout_count{} 394.0
+improbable_entity_spatial_query_fanout_sum{} 788.0
+# HELP improbable_platform_bridge_engine_pongs_received Number of pongs received by bridge back from engine
+# TYPE improbable_platform_bridge_engine_pongs_received counter
+improbable_platform_bridge_engine_pongs_received{engine_platform="TinyPhysicsEngine",} 0.0
+# HELP improbable_bridge_downstream_message_size Aggregate message size per type sent to the engine.
+# TYPE improbable_bridge_downstream_message_size counter
+improbable_bridge_downstream_message_size{engine_platform="TinyPhysicsEngine",message_type="TargetPositionUpdate",} 20513.0
+improbable_bridge_downstream_message_size{engine_platform="TinyPhysicsEngine",message_type="OpCodesForSingleEntity",} 79230.0
+improbable_bridge_downstream_message_size{engine_platform="TinyPhysicsEngine",message_type="AssetLoadRequest",} 0.0
+improbable_bridge_downstream_message_size{engine_platform="TinyPhysicsEngine",message_type="VelocityCheckUpdate",} 461.0
+improbable_bridge_downstream_message_size{engine_platform="TinyPhysicsEngine",message_type="ProximitySensorDataUpdate",} 42287.0
+# HELP improbable_entity_number Number of entities.
+# TYPE improbable_entity_number gauge
+improbable_entity_number{tag="all",} 124.0
+# HELP improbable_bridge_module_oracle_bridge_module_heartbeat_latency Roundtrip time from bridge module oracle to bridge modules (secs)
+# TYPE improbable_bridge_module_oracle_bridge_module_heartbeat_latency histogram
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_bucket{le="5.0E-4",} 28.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_bucket{le="0.001",} 30.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_bucket{le="0.002",} 30.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_bucket{le="0.004",} 30.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_bucket{le="0.008",} 30.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_bucket{le="0.016",} 30.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_bucket{le="0.05",} 30.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_bucket{le="0.1",} 30.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_bucket{le="0.2",} 30.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_bucket{le="0.5",} 30.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_bucket{le="1.0",} 30.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_bucket{le="5.0",} 30.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_bucket{le="10.0",} 30.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_bucket{le="20.0",} 30.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_bucket{le="+Inf",} 30.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_count{} 30.0
+improbable_bridge_module_oracle_bridge_module_heartbeat_latency_sum{} 0.002
+# HELP improbable_engine_cpu_usage CPU usage per platform
+# TYPE improbable_engine_cpu_usage histogram
+# HELP improbable_routerProxy_endpoint_cached_proxy_message Counter of the messages that have been intercepted by the local endpoint cache router proxy and proxied to their local destinations.
+# TYPE improbable_routerProxy_endpoint_cached_proxy_message counter
+improbable_routerProxy_endpoint_cached_proxy_message{send_type="tell",} 14816.0
+improbable_routerProxy_endpoint_cached_proxy_message{send_type="forward",} 1.0
+improbable_routerProxy_endpoint_cached_proxy_message{send_type="ask",} 1471.0
+# HELP improbable_grpc_server_calls_finished Number of gRPC server calls finished by method and outcome.
+# TYPE improbable_grpc_server_calls_finished counter
+improbable_grpc_server_calls_finished{method="improbable.service.fabric.GlobalBrokerService/Ping",outcome="success",} 24.0
+improbable_grpc_server_calls_finished{method="improbable.platform.runtime.HealthCheckService/HealthCheck",outcome="success",} 26.0
+improbable_grpc_server_calls_finished{method="improbable.fabric.internal.BridgeOracleInternalService/RequireWorker",outcome="success",} 8.0
+improbable_grpc_server_calls_finished{method="improbable.fabric.internal.scaling.ScalingStatsInternalService/GetScalingStats",outcome="success",} 20.0
+improbable_grpc_server_calls_finished{method="improbable.fabric.internal.ServiceDiscoveryInternalService/ListLocalServers",outcome="success",} 4.0
+# HELP improbable_persistence_last_snapshot_size Size of the last snapshot in bytes
+# TYPE improbable_persistence_last_snapshot_size gauge
+improbable_persistence_last_snapshot_size{} 0.0
+# HELP improbable_network_raknet_congestion_control_limit_bps Congestion control limit in BPS inside the link for that peer.
+# TYPE improbable_network_raknet_congestion_control_limit_bps gauge
+# HELP grpc_server_started_total Total number of RPCs started on the server.
+# TYPE grpc_server_started_total counter
+grpc_server_started_total{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",} 26.0
+grpc_server_started_total{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",} 20.0
+grpc_server_started_total{grpc_type="BIDI_STREAMING",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="TrackingStream",} 7.0
+grpc_server_started_total{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",} 8.0
+grpc_server_started_total{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",} 4.0
+grpc_server_started_total{grpc_type="CLIENT_STREAMING",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="SubscriptionStream",} 8.0
+grpc_server_started_total{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",} 24.0
+# HELP improbable_bridge_players_per_bridge Count the number of entities with --player_prefab_name on a Bridge.
+# TYPE improbable_bridge_players_per_bridge histogram
+improbable_bridge_players_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="1.0",} 0.0
+improbable_bridge_players_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="2.0",} 0.0
+improbable_bridge_players_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="4.0",} 0.0
+improbable_bridge_players_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="6.0",} 0.0
+improbable_bridge_players_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="8.0",} 0.0
+improbable_bridge_players_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="10.0",} 0.0
+improbable_bridge_players_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="20.0",} 0.0
+improbable_bridge_players_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="50.0",} 0.0
+improbable_bridge_players_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="100.0",} 0.0
+improbable_bridge_players_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="200.0",} 0.0
+improbable_bridge_players_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="300.0",} 0.0
+improbable_bridge_players_per_bridge_bucket{engine_platform="TinyPhysicsEngine",le="+Inf",} 0.0
+improbable_bridge_players_per_bridge_count{engine_platform="TinyPhysicsEngine",} 0.0
+improbable_bridge_players_per_bridge_sum{engine_platform="TinyPhysicsEngine",} 0.0
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total{} 64.84
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds{} 1.471532720707E9
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds{} 370.0
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds{} 65536.0
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes{} 8.358719488E9
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes{} 1.997684736E9
+# HELP improbable_bridge_upstream_message_size Aggregate message size per type sent from the engine.
+# TYPE improbable_bridge_upstream_message_size counter
+improbable_bridge_upstream_message_size{engine_platform="TinyPhysicsEngine",message_type="PositionUpdate",} 260418.0
+improbable_bridge_upstream_message_size{engine_platform="TinyPhysicsEngine",message_type="AssetLoaded",} 104.0
+improbable_bridge_upstream_message_size{engine_platform="TinyPhysicsEngine",message_type="EngineReady$",} 2.0
+improbable_bridge_upstream_message_size{engine_platform="TinyPhysicsEngine",message_type="RotationUpdate",} 179690.0
+improbable_bridge_upstream_message_size{engine_platform="TinyPhysicsEngine",message_type="WorkerMetrics",} 99.0
+# HELP improbable_engine_stopped Number of stopped engines, per platform (engine type).
+# TYPE improbable_engine_stopped counter
+# HELP improbable_pubsub_publish_local Number of publishes for topic type propagated reaching at least one local subscriber.
+# TYPE improbable_pubsub_publish_local counter
+improbable_pubsub_publish_local{topic="Constraint",} 11.0
+improbable_pubsub_publish_local{topic="Chunk",} 13295.0
+improbable_pubsub_publish_local{topic="Global",} 1.0
+improbable_pubsub_publish_local{topic="Bridge",} 4.0
+# HELP improbable_network_tcp_sent_bytes Counter of bytes sent over to the given peer.
+# TYPE improbable_network_tcp_sent_bytes counter
+improbable_network_tcp_sent_bytes{link="ClientTinyPhysicsEngine",} 440313.0
+improbable_network_tcp_sent_bytes{link="TinyPhysicsEngine",} 143733.0
+# HELP improbable_persistence_snapshots_write_failed Counter of the failed snapshot writes
+# TYPE improbable_persistence_snapshots_write_failed counter
+# HELP improbable_bridge_oracle_engine_stop_request Number of engine stop requests.
+# TYPE improbable_bridge_oracle_engine_stop_request counter
+improbable_bridge_oracle_engine_stop_request{} 0.0
+# HELP improbable_network_tcp_received_bytes Counter of bytes received from the given peer.
+# TYPE improbable_network_tcp_received_bytes counter
+improbable_network_tcp_received_bytes{link="ClientTinyPhysicsEngine",} 143733.0
+improbable_network_tcp_received_bytes{link="TinyPhysicsEngine",} 440313.0
+# HELP improbable_logging_dropped The number of dropped logs due to rate limiting.
+# TYPE improbable_logging_dropped counter
+improbable_logging_dropped{} 0.0
+# HELP improbable_grpc_channel_channel_opened Number of gRPC channels opened.
+# TYPE improbable_grpc_channel_channel_opened counter
+improbable_grpc_channel_channel_opened{} 5.0
+# HELP improbable_persistence_snapshots_dangerously_small Counter of the snapshots with size below 1026
+# TYPE improbable_persistence_snapshots_dangerously_small counter
+improbable_persistence_snapshots_dangerously_small{} 0.0
+# HELP improbable_chunk_num_published_entity The number of times publishEntities() was called with a single entity
+# TYPE improbable_chunk_num_published_entity counter
+improbable_chunk_num_published_entity{} 323.0
+# HELP improbable_pubsub_global_broker_subscriptions_remote Number of remote VM subscriptions that we know of for a topic of given type.
+# TYPE improbable_pubsub_global_broker_subscriptions_remote gauge
+improbable_pubsub_global_broker_subscriptions_remote{topic="Constraint",} 1.0
+improbable_pubsub_global_broker_subscriptions_remote{topic="Chunk",} 6400.0
+improbable_pubsub_global_broker_subscriptions_remote{topic="Global",} 1.0
+improbable_pubsub_global_broker_subscriptions_remote{topic="Bridge",} 1.0
+# HELP improbable_network_raknet_received_bytes Counter of bytes received from the given peer.
+# TYPE improbable_network_raknet_received_bytes counter
+# HELP improbable_network_raknet_running Number of instances that are currently running.
+# TYPE improbable_network_raknet_running gauge
+# HELP improbable_grpc_server_requests_received Number of request messages received by gRPC server calls by method.
+# TYPE improbable_grpc_server_requests_received counter
+improbable_grpc_server_requests_received{method="improbable.service.fabric.GlobalBrokerService/SubscriptionStream",} 6403.0
+improbable_grpc_server_requests_received{method="improbable.fabric.internal.ServiceDiscoveryInternalService/ListLocalServers",} 4.0
+improbable_grpc_server_requests_received{method="improbable.service.fabric.GlobalBrokerService/TrackingStream",} 14.0
+improbable_grpc_server_requests_received{method="improbable.fabric.internal.scaling.ScalingStatsInternalService/GetScalingStats",} 20.0
+improbable_grpc_server_requests_received{method="improbable.platform.runtime.HealthCheckService/HealthCheck",} 26.0
+improbable_grpc_server_requests_received{method="improbable.service.fabric.GlobalBrokerService/Ping",} 24.0
+improbable_grpc_server_requests_received{method="improbable.fabric.internal.BridgeOracleInternalService/RequireWorker",} 8.0
+# HELP improbable_mailbox_actors_killed Number of actors killed as a result of the mailbox being full.
+# TYPE improbable_mailbox_actors_killed counter
+improbable_mailbox_actors_killed{normalised_actor_name="StreamingSearchActor",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="BridgeActor",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="GSimModule:21",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="Chunk",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="PersistenceModule1",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="LocalPubSubProvider.1",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="LocalPubSubProvider.0",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="EngineStartupModuleOracleModule1",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="LocalPubSubProvider.3",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="LocalPubSubProvider.2",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="LocalPubSubProvider.5",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="LocalPubSubProvider.4",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="BridgeModule:yoKv8zix1",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="LocalPubSubProvider.7",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="LocalPubSubProvider.6",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="DevWorldRestServer",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="Entity",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="selectors",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="GSimModule:11",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="moduleManager",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="WorldAppSupervisorModule1",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="ReceptionistRestServer",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="GSimPersistenceActor",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="deadLetterListener",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="routerProxy",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="Receptionist",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="ReceptionistModule1",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="IO",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="RouterModule1",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="eventStreamUnsubscriber",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="system",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="improbable.game.GameXLifeCycleManager",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="GSimBridgeModule",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="improbable.game.GameXEntitySpawning",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="DevWorldRestApiModule1",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="WorldAppOracleModule1",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="EntityPingerActor",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="ChunkActorSupervisor",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="user",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="EntityFactory",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="BridgeOracleModule1",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="EntityUser",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="InspectionRestModule1",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="AssetDatabaseRestServer",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="AssetDatabaseModule1",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="queryActor",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="listener",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="BridgeModule:FhUkAzUf1",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="BridgeModuleOracleModule1",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="inspection",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="EngineStartupModule1",} 0.0
+improbable_mailbox_actors_killed{normalised_actor_name="ProfilingModule1",} 0.0
+# HELP improbable_pubsub_local_to_global_roundtrip_latency_sec Time in seconds taken by a roundtrip from Local to Global and back to Local.
+# TYPE improbable_pubsub_local_to_global_roundtrip_latency_sec histogram
+improbable_pubsub_local_to_global_roundtrip_latency_sec_bucket{le="5.0E-4",} 24.0
+improbable_pubsub_local_to_global_roundtrip_latency_sec_bucket{le="0.001",} 24.0
+improbable_pubsub_local_to_global_roundtrip_latency_sec_bucket{le="0.002",} 24.0
+improbable_pubsub_local_to_global_roundtrip_latency_sec_bucket{le="0.004",} 24.0
+improbable_pubsub_local_to_global_roundtrip_latency_sec_bucket{le="0.008",} 24.0
+improbable_pubsub_local_to_global_roundtrip_latency_sec_bucket{le="0.016",} 24.0
+improbable_pubsub_local_to_global_roundtrip_latency_sec_bucket{le="0.05",} 24.0
+improbable_pubsub_local_to_global_roundtrip_latency_sec_bucket{le="0.1",} 24.0
+improbable_pubsub_local_to_global_roundtrip_latency_sec_bucket{le="0.2",} 24.0
+improbable_pubsub_local_to_global_roundtrip_latency_sec_bucket{le="0.5",} 24.0
+improbable_pubsub_local_to_global_roundtrip_latency_sec_bucket{le="1.0",} 24.0
+improbable_pubsub_local_to_global_roundtrip_latency_sec_bucket{le="+Inf",} 24.0
+improbable_pubsub_local_to_global_roundtrip_latency_sec_count{} 24.0
+improbable_pubsub_local_to_global_roundtrip_latency_sec_sum{} 0.0
+# HELP improbable_network_tcp_exceptions Number of exceptions thrown by the link for a given peer.
+# TYPE improbable_network_tcp_exceptions counter
+# HELP improbable_platform_bridge_hard_qos_kills Number of bridges killed by hard QoS because of high latency
+# TYPE improbable_platform_bridge_hard_qos_kills counter
+improbable_platform_bridge_hard_qos_kills{engine_platform="TinyPhysicsEngine",} 0.0
+# HELP improbable_module_node_live Reports whether the current module node (one per JVM) is alive.
+# TYPE improbable_module_node_live gauge
+improbable_module_node_live{module_name="master",} 1.0
+# HELP improbable_mailbox_overflows Number of times a message was sent to an actor with its mailbox containing too many messages.
+# TYPE improbable_mailbox_overflows counter
+improbable_mailbox_overflows{normalised_actor_name="StreamingSearchActor",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="BridgeActor",} 1024.0
+improbable_mailbox_overflows{normalised_actor_name="GSimModule:21",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="Chunk",} 179.0
+improbable_mailbox_overflows{normalised_actor_name="PersistenceModule1",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="LocalPubSubProvider.1",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="LocalPubSubProvider.0",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="EngineStartupModuleOracleModule1",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="LocalPubSubProvider.3",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="LocalPubSubProvider.2",} 1.0
+improbable_mailbox_overflows{normalised_actor_name="LocalPubSubProvider.5",} 207.0
+improbable_mailbox_overflows{normalised_actor_name="LocalPubSubProvider.4",} 768.0
+improbable_mailbox_overflows{normalised_actor_name="BridgeModule:yoKv8zix1",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="LocalPubSubProvider.7",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="LocalPubSubProvider.6",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="DevWorldRestServer",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="Entity",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="selectors",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="GSimModule:11",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="moduleManager",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="WorldAppSupervisorModule1",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="ReceptionistRestServer",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="GSimPersistenceActor",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="deadLetterListener",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="routerProxy",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="Receptionist",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="ReceptionistModule1",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="IO",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="RouterModule1",} 1129.0
+improbable_mailbox_overflows{normalised_actor_name="eventStreamUnsubscriber",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="system",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="improbable.game.GameXLifeCycleManager",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="GSimBridgeModule",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="improbable.game.GameXEntitySpawning",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="DevWorldRestApiModule1",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="WorldAppOracleModule1",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="EntityPingerActor",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="ChunkActorSupervisor",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="user",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="EntityFactory",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="BridgeOracleModule1",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="EntityUser",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="InspectionRestModule1",} 1003.0
+improbable_mailbox_overflows{normalised_actor_name="AssetDatabaseRestServer",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="AssetDatabaseModule1",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="queryActor",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="listener",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="BridgeModule:FhUkAzUf1",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="BridgeModuleOracleModule1",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="inspection",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="EngineStartupModule1",} 0.0
+improbable_mailbox_overflows{normalised_actor_name="ProfilingModule1",} 0.0
+# HELP improbable_network_tcp_rtt Round-trip-time (ms) for peer, as reported by stats.
+# TYPE improbable_network_tcp_rtt gauge
+improbable_network_tcp_rtt{link="ClientTinyPhysicsEngine",} 0.0
+improbable_network_tcp_rtt{link="TinyPhysicsEngine",} 0.0
+# HELP improbable_entity_entity_moved_out_of_bounds Number of Entities moved out of bounds of the world.
+# TYPE improbable_entity_entity_moved_out_of_bounds counter
+improbable_entity_entity_moved_out_of_bounds{} 0.0
+# HELP improbable_tinyengine_tick Engine tick duration in ns.
+# TYPE improbable_tinyengine_tick summary
+improbable_tinyengine_tick_count{} 405.0
+improbable_tinyengine_tick_sum{} 9.8E7
+# HELP improbable_network_raknet_connected Number of instances that are currently connected.
+# TYPE improbable_network_raknet_connected gauge
+# HELP grpc_client_completed_latency_seconds Histogram of rpc response latency (in seconds) for completed rpcs.
+# TYPE grpc_client_completed_latency_seconds histogram
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.001",} 16.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.005",} 16.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.01",} 16.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.05",} 20.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.075",} 20.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.1",} 20.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.25",} 20.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.5",} 20.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="1.0",} 20.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="2.0",} 20.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="5.0",} 20.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="10.0",} 20.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="+Inf",} 20.0
+grpc_client_completed_latency_seconds_count{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",} 20.0
+grpc_client_completed_latency_seconds_sum{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",} 0.073
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.001",} 2.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.005",} 6.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.01",} 7.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.05",} 8.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.075",} 8.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.1",} 8.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.25",} 8.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.5",} 8.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="1.0",} 8.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="2.0",} 8.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="5.0",} 8.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="10.0",} 8.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="+Inf",} 8.0
+grpc_client_completed_latency_seconds_count{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",} 8.0
+grpc_client_completed_latency_seconds_sum{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",} 0.03400000000000001
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.001",} 2.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.005",} 2.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.01",} 3.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.05",} 3.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.075",} 3.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.1",} 3.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.25",} 4.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.5",} 4.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="1.0",} 4.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="2.0",} 4.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="5.0",} 4.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="10.0",} 4.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="+Inf",} 4.0
+grpc_client_completed_latency_seconds_count{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",} 4.0
+grpc_client_completed_latency_seconds_sum{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",} 0.115
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.001",} 24.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.005",} 24.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.01",} 24.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.05",} 24.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.075",} 24.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.1",} 24.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.25",} 24.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.5",} 24.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="1.0",} 24.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="2.0",} 24.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="5.0",} 24.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="10.0",} 24.0
+grpc_client_completed_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="+Inf",} 24.0
+grpc_client_completed_latency_seconds_count{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",} 24.0
+grpc_client_completed_latency_seconds_sum{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",} 0.02000000000000001
+# HELP grpc_server_handled_total Total number of RPCs completed on the server, regardless of success or failure.
+# TYPE grpc_server_handled_total counter
+grpc_server_handled_total{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",code="OK",} 20.0
+grpc_server_handled_total{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",code="OK",} 8.0
+grpc_server_handled_total{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",code="OK",} 4.0
+grpc_server_handled_total{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",code="OK",} 24.0
+grpc_server_handled_total{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",code="OK",} 26.0
+# HELP improbable_pubsub_publish_remote_fanout Number of messages for topic type fanned out to remote subscribers.
+# TYPE improbable_pubsub_publish_remote_fanout counter
+# HELP improbable_entity_spatial_query_count Number of spatial query calls, with relative outcomes.
+# TYPE improbable_entity_spatial_query_count counter
+improbable_entity_spatial_query_count{locality="local",outcome="success",} 810.0
+improbable_entity_spatial_query_count{locality="local",outcome="failure",} 0.0
+improbable_entity_spatial_query_count{locality="global",outcome="failure",} 0.0
+improbable_entity_spatial_query_count{locality="global",outcome="success",} 394.0
+# HELP improbable_pubsub_publish_local_fanout Number of messages for topic type fanned out to local subscribers.
+# TYPE improbable_pubsub_publish_local_fanout counter
+improbable_pubsub_publish_local_fanout{topic="Constraint",} 44.0
+improbable_pubsub_publish_local_fanout{topic="Chunk",} 26650.0
+improbable_pubsub_publish_local_fanout{topic="Global",} 1.0
+improbable_pubsub_publish_local_fanout{topic="Bridge",} 4.0
+# HELP improbable_entity_gsim_migrations_started Number of times an Entity started a migration to another gsim.
+# TYPE improbable_entity_gsim_migrations_started counter
+improbable_entity_gsim_migrations_started{} 11.0
+# HELP improbable_network_tcp_dropped_state_updates Number of state updates dropped due to QoS
+# TYPE improbable_network_tcp_dropped_state_updates counter
+improbable_network_tcp_dropped_state_updates{link="ClientTinyPhysicsEngine",} 0.0
+improbable_network_tcp_dropped_state_updates{link="TinyPhysicsEngine",} 0.0
+# HELP improbable_platform_bridge_engine_log_messages Number of log messages sent from engine to bridge
+# TYPE improbable_platform_bridge_engine_log_messages counter
+# HELP improbable_actor_exception Number of exceptions in the Actor's receive call, by Exception's SimpleName.
+# TYPE improbable_actor_exception counter
+# HELP improbable_bridge_message Counter of messages per type sent to/from the engine.
+# TYPE improbable_bridge_message counter
+# HELP improbable_bridge_dynamic_entities_per_bridge The number of dynamic entities that each bridge has information about. Acts as dynamic entities per client/fsim radius.
+# TYPE improbable_bridge_dynamic_entities_per_bridge histogram
+# HELP improbable_grpc_client_requests_sent Number of request messages sent by gRPC client calls by method.
+# TYPE improbable_grpc_client_requests_sent counter
+improbable_grpc_client_requests_sent{method="improbable.service.fabric.GlobalBrokerService/SubscriptionStream",} 6403.0
+improbable_grpc_client_requests_sent{method="improbable.platform.deployment.ModuleService/List",} 1.0
+improbable_grpc_client_requests_sent{method="improbable.platform.inner.config.FabricWorkerFlagzService/List",} 1.0
+improbable_grpc_client_requests_sent{method="improbable.service.fabric.GlobalBrokerService/TrackingStream",} 14.0
+improbable_grpc_client_requests_sent{method="improbable.fabric.internal.scaling.ScalingStatsInternalService/GetScalingStats",} 20.0
+improbable_grpc_client_requests_sent{method="improbable.platform.inner.config.DnsDiscoveryService/Register",} 13.0
+improbable_grpc_client_requests_sent{method="improbable.platform.inner.config.FabricFlagzService/Watch",} 1.0
+improbable_grpc_client_requests_sent{method="improbable.platform.inner.config.FabricWorkerFlagzService/Watch",} 1.0
+improbable_grpc_client_requests_sent{method="improbable.fabric.internal.BridgeOracleInternalService/RequireWorker",} 8.0
+improbable_grpc_client_requests_sent{method="improbable.fabric.internal.ServiceDiscoveryInternalService/ListLocalServers",} 4.0
+improbable_grpc_client_requests_sent{method="improbable.platform.deployment.NodeService/List",} 7.0
+improbable_grpc_client_requests_sent{method="improbable.service.fabric.GlobalBrokerService/Ping",} 24.0
+improbable_grpc_client_requests_sent{method="improbable.platform.inner.config.FabricFlagzService/List",} 1.0
+# HELP improbable_network_tcp_sent_packets Counter of packets sent over to the given peer.
+# TYPE improbable_network_tcp_sent_packets counter
+improbable_network_tcp_sent_packets{link="ClientTinyPhysicsEngine",} 12295.0
+improbable_network_tcp_sent_packets{link="TinyPhysicsEngine",} 725.0
+# HELP improbable_entity_spatial_query_result_size Number of entities returned by successful spatial find calls.
+# TYPE improbable_entity_spatial_query_result_size histogram
+improbable_entity_spatial_query_result_size_bucket{locality="global",le="1.0",} 0.0
+improbable_entity_spatial_query_result_size_bucket{locality="global",le="4.0",} 0.0
+improbable_entity_spatial_query_result_size_bucket{locality="global",le="16.0",} 0.0
+improbable_entity_spatial_query_result_size_bucket{locality="global",le="64.0",} 1.0
+improbable_entity_spatial_query_result_size_bucket{locality="global",le="256.0",} 394.0
+improbable_entity_spatial_query_result_size_bucket{locality="global",le="1024.0",} 394.0
+improbable_entity_spatial_query_result_size_bucket{locality="global",le="+Inf",} 394.0
+improbable_entity_spatial_query_result_size_count{locality="global",} 394.0
+improbable_entity_spatial_query_result_size_sum{locality="global",} 45739.0
+improbable_entity_spatial_query_result_size_bucket{locality="local",le="1.0",} 394.0
+improbable_entity_spatial_query_result_size_bucket{locality="local",le="4.0",} 394.0
+improbable_entity_spatial_query_result_size_bucket{locality="local",le="16.0",} 394.0
+improbable_entity_spatial_query_result_size_bucket{locality="local",le="64.0",} 396.0
+improbable_entity_spatial_query_result_size_bucket{locality="local",le="256.0",} 810.0
+improbable_entity_spatial_query_result_size_bucket{locality="local",le="1024.0",} 810.0
+improbable_entity_spatial_query_result_size_bucket{locality="local",le="+Inf",} 810.0
+improbable_entity_spatial_query_result_size_count{locality="local",} 810.0
+improbable_entity_spatial_query_result_size_sum{locality="local",} 47895.0
+# HELP improbable_bridge_module_oracle_bridge_module_failed_heartbeat_count Number of times a bridge module disconnected due to a failed heartbeat
+# TYPE improbable_bridge_module_oracle_bridge_module_failed_heartbeat_count counter
+improbable_bridge_module_oracle_bridge_module_failed_heartbeat_count{} 0.0
+# HELP improbable_pubsub_publish_local_only Number of purely local fanouts.
+# TYPE improbable_pubsub_publish_local_only counter
+improbable_pubsub_publish_local_only{topic="Constraint",} 11.0
+improbable_pubsub_publish_local_only{topic="Chunk",} 13295.0
+improbable_pubsub_publish_local_only{topic="Global",} 1.0
+improbable_pubsub_publish_local_only{topic="Bridge",} 4.0
+# HELP improbable_engine_vm_rss RSS per platform
+# TYPE improbable_engine_vm_rss histogram
+# HELP improbable_chunk_assignment_requests_sent The number of times an assignment request was sent
+# TYPE improbable_chunk_assignment_requests_sent counter
+improbable_chunk_assignment_requests_sent{} 0.0
+# HELP improbable_engine_exit_code Counting the engine exit code distribution
+# TYPE improbable_engine_exit_code counter
+# HELP improbable_module_manager_all_modules_ready_ms The elapsed time in milliseconds from JVM startup to the first time all module on this node are known to be ready.
+# TYPE improbable_module_manager_all_modules_ready_ms summary
+improbable_module_manager_all_modules_ready_ms_count{} 1.0
+improbable_module_manager_all_modules_ready_ms_sum{} 27501.0
+# HELP improbable_entity_entity_query_latency Latency (in sec) of entity find calls that were *successful*.
+# TYPE improbable_entity_entity_query_latency histogram
+improbable_entity_entity_query_latency_bucket{locality="global",le="5.0E-4",} 4.0
+improbable_entity_entity_query_latency_bucket{locality="global",le="0.001",} 7.0
+improbable_entity_entity_query_latency_bucket{locality="global",le="0.002",} 8.0
+improbable_entity_entity_query_latency_bucket{locality="global",le="0.004",} 9.0
+improbable_entity_entity_query_latency_bucket{locality="global",le="0.008",} 9.0
+improbable_entity_entity_query_latency_bucket{locality="global",le="0.016",} 9.0
+improbable_entity_entity_query_latency_bucket{locality="global",le="0.05",} 9.0
+improbable_entity_entity_query_latency_bucket{locality="global",le="0.1",} 10.0
+improbable_entity_entity_query_latency_bucket{locality="global",le="0.2",} 10.0
+improbable_entity_entity_query_latency_bucket{locality="global",le="0.5",} 10.0
+improbable_entity_entity_query_latency_bucket{locality="global",le="1.0",} 10.0
+improbable_entity_entity_query_latency_bucket{locality="global",le="+Inf",} 10.0
+improbable_entity_entity_query_latency_count{locality="global",} 10.0
+improbable_entity_entity_query_latency_sum{locality="global",} 0.06798433899999999
+improbable_entity_entity_query_latency_bucket{locality="local",le="5.0E-4",} 18.0
+improbable_entity_entity_query_latency_bucket{locality="local",le="0.001",} 18.0
+improbable_entity_entity_query_latency_bucket{locality="local",le="0.002",} 19.0
+improbable_entity_entity_query_latency_bucket{locality="local",le="0.004",} 20.0
+improbable_entity_entity_query_latency_bucket{locality="local",le="0.008",} 20.0
+improbable_entity_entity_query_latency_bucket{locality="local",le="0.016",} 20.0
+improbable_entity_entity_query_latency_bucket{locality="local",le="0.05",} 20.0
+improbable_entity_entity_query_latency_bucket{locality="local",le="0.1",} 20.0
+improbable_entity_entity_query_latency_bucket{locality="local",le="0.2",} 20.0
+improbable_entity_entity_query_latency_bucket{locality="local",le="0.5",} 20.0
+improbable_entity_entity_query_latency_bucket{locality="local",le="1.0",} 20.0
+improbable_entity_entity_query_latency_bucket{locality="local",le="+Inf",} 20.0
+improbable_entity_entity_query_latency_count{locality="local",} 20.0
+improbable_entity_entity_query_latency_sum{locality="local",} 0.004826544
+# HELP improbable_entity_entity_query_count_by_origin Names of behaviours and worldapps making entity queries
+# TYPE improbable_entity_entity_query_count_by_origin counter
+improbable_entity_entity_query_count_by_origin{locality="global",query_origin="improbable.game.GameXEntitySpawning",} 138.0
+improbable_entity_entity_query_count_by_origin{locality="global",query_origin="improbable.loadtests.behaviours.TimeWatchingBehaviour",} 5.0
+# HELP improbable_pubsub_subscriptions_remote Number of remote VM subscriptions that we know of for a topic of given type.
+# TYPE improbable_pubsub_subscriptions_remote gauge
+improbable_pubsub_subscriptions_remote{topic="Constraint",} 0.0
+improbable_pubsub_subscriptions_remote{topic="Chunk",} 0.0
+improbable_pubsub_subscriptions_remote{topic="Global",} 0.0
+improbable_pubsub_subscriptions_remote{topic="Bridge",} 0.0
+# HELP grpc_client_msg_received_total Total number of stream messages received from the server.
+# TYPE grpc_client_msg_received_total counter
+grpc_client_msg_received_total{grpc_type="BIDI_STREAMING",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="TrackingStream",} 14.0
+# HELP improbable_network_tcp_hard_disconnects Number of hard disconnects for a given peer.
+# TYPE improbable_network_tcp_hard_disconnects counter
+# HELP improbable_loadbalancer_constraint_assignment_changed Counter of number of times the worker assigned to a constraint has changed.
+# TYPE improbable_loadbalancer_constraint_assignment_changed counter
+improbable_loadbalancer_constraint_assignment_changed{} 25.0
+# HELP improbable_routing_global_messages_sent Number of messages sent.
+# TYPE improbable_routing_global_messages_sent counter
+improbable_routing_global_messages_sent{endpoint="Bridge",message_type="DistributedBridgeEntities",} 2.0
+improbable_routing_global_messages_sent{endpoint="Singleton",message_type="RegisterResourceSupervisor",} 2.0
+improbable_routing_global_messages_sent{endpoint="Entity",message_type="Ping",} 2.0
+improbable_routing_global_messages_sent{endpoint="Receptionist",message_type="InternalIpRequest$",} 1.0
+# HELP improbable_pubsub_publish_remote Number of publishes for topic type propagated reaching at least one remote subscriber.
+# TYPE improbable_pubsub_publish_remote counter
+# HELP improbable_chunk_assignment_change The seconds interval between chunk constraint assignment changes per engine platform
+# TYPE improbable_chunk_assignment_change histogram
+# HELP improbable_entity_gsim_forced_migrations_completed Number of times an Entity completed a GSim migration due to a timeout.
+# TYPE improbable_entity_gsim_forced_migrations_completed counter
+improbable_entity_gsim_forced_migrations_completed{} 0.0
+# HELP improbable_bridge_stiffness The stiffness reported per bridge.
+# TYPE improbable_bridge_stiffness histogram
+improbable_bridge_stiffness_bucket{engine_platform="TinyPhysicsEngine",le="0.0",} 0.0
+improbable_bridge_stiffness_bucket{engine_platform="TinyPhysicsEngine",le="0.2",} 0.0
+improbable_bridge_stiffness_bucket{engine_platform="TinyPhysicsEngine",le="0.4",} 0.0
+improbable_bridge_stiffness_bucket{engine_platform="TinyPhysicsEngine",le="0.6",} 0.0
+improbable_bridge_stiffness_bucket{engine_platform="TinyPhysicsEngine",le="0.8",} 0.0
+improbable_bridge_stiffness_bucket{engine_platform="TinyPhysicsEngine",le="0.9999999999999999",} 0.0
+improbable_bridge_stiffness_bucket{engine_platform="TinyPhysicsEngine",le="+Inf",} 11.0
+improbable_bridge_stiffness_count{engine_platform="TinyPhysicsEngine",} 11.0
+improbable_bridge_stiffness_sum{engine_platform="TinyPhysicsEngine",} +Inf
+# HELP improbable_network_raknet_rtt Round-trip-time (ms) for peer, as reported by stats.
+# TYPE improbable_network_raknet_rtt gauge
+# HELP improbable_routerProxy_message_serialized Counter of the messages that have been serialized.
+# TYPE improbable_routerProxy_message_serialized counter
+# HELP improbable_entity_actors_created Number of Entity Actors created.
+# TYPE improbable_entity_actors_created counter
+improbable_entity_actors_created{} 290.0
+# HELP improbable_engine_underloaded_warning Number of times engine underloaded on stiffness recalculation.
+# TYPE improbable_engine_underloaded_warning counter
+# HELP gamex_gamex_deleted_entities_total The total number of entities that have been deleted.
+# TYPE gamex_gamex_deleted_entities_total counter
+gamex_gamex_deleted_entities_total{} 155.0
+# HELP improbable_persistence_gsim_snapshotted_entity Counter of the entities that have been snapshotted at GSims.
+# TYPE improbable_persistence_gsim_snapshotted_entity counter
+# HELP improbable_bridge_actor_state_bridge_assignment_requests Counter for the number of bridge assignment requests received.
+# TYPE improbable_bridge_actor_state_bridge_assignment_requests counter
+improbable_bridge_actor_state_bridge_assignment_requests{} 0.0
+# HELP improbable_bridge_dropped_state_update_message Counter of upstream state update messages dropped by the bridge.
+# TYPE improbable_bridge_dropped_state_update_message counter
+# HELP improbable_engine_metrics The combined metrics for the engine. Individual ones can be obtained via 'metric' property.
+# TYPE improbable_engine_metrics gauge
+improbable_engine_metrics{engineId="TinyPhysicsEngine0",engine_platform="TinyPhysicsEngine",metric="Load",} 0.0015188588106534904
+# HELP improbable_platform_bridge_engine_latency Latency between engine and bridge (in s)
+# TYPE improbable_platform_bridge_engine_latency histogram
+# HELP jvm_gc_collection_seconds Time spent in a given JVM garbage collector in seconds.
+# TYPE jvm_gc_collection_seconds summary
+jvm_gc_collection_seconds_sum{gc="PS Scavenge",} 3.094
+jvm_gc_collection_seconds_count{gc="PS Scavenge",} 28.0
+jvm_gc_collection_seconds_sum{gc="PS MarkSweep",} 0.379
+jvm_gc_collection_seconds_count{gc="PS MarkSweep",} 4.0
+# HELP improbable_platform_bridge_engine_pings_sent Number of pings sent from bridge to engine
+# TYPE improbable_platform_bridge_engine_pings_sent counter
+improbable_platform_bridge_engine_pings_sent{engine_platform="TinyPhysicsEngine",} 0.0
+# HELP grpc_server_msg_received_total Total number of stream messages received from the client.
+# TYPE grpc_server_msg_received_total counter
+grpc_server_msg_received_total{grpc_type="BIDI_STREAMING",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="TrackingStream",} 14.0
+grpc_server_msg_received_total{grpc_type="CLIENT_STREAMING",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="SubscriptionStream",} 6403.0
+# HELP improbable_entity_spatial_query_count_by_origin Names of behaviours and worldapps making spatial queries
+# TYPE improbable_entity_spatial_query_count_by_origin counter
+improbable_entity_spatial_query_count_by_origin{locality="global",query_origin="improbable.loadtests.behaviours.ProximitySensorBehaviour",} 416.0
+# HELP improbable_tinyengine_engine Number of tiny engines live.
+# TYPE improbable_tinyengine_engine gauge
+improbable_tinyengine_engine{} 0.0
+# HELP improbable_bridge_module_oracle_bridge_module_count Number of bridge modules
+# TYPE improbable_bridge_module_oracle_bridge_module_count gauge
+improbable_bridge_module_oracle_bridge_module_count{} 2.0
+# HELP improbable_network_raknet_sent_packets Counter of packets sent over to the given peer.
+# TYPE improbable_network_raknet_sent_packets counter
+# HELP improbable_bridge_downstream_state_update_message Counter of state update messages per type sent to the engine.
+# TYPE improbable_bridge_downstream_state_update_message counter
+improbable_bridge_downstream_state_update_message{engine_platform="TinyPhysicsEngine",message_type="VelocityCheckUpdate",prefab="Waypoint Follower",} 2.0
+improbable_bridge_downstream_state_update_message{engine_platform="TinyPhysicsEngine",message_type="ProximitySensorDataUpdate",prefab="Wandering Entity",} 284.0
+improbable_bridge_downstream_state_update_message{engine_platform="TinyPhysicsEngine",message_type="TargetPositionUpdate",prefab="Wandering Entity",} 101.0
+# HELP grpc_server_handled_latency_seconds Histogram of response latency (seconds) of gRPC that had been application-level handled by the server.
+# TYPE grpc_server_handled_latency_seconds histogram
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",le="0.001",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",le="0.005",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",le="0.01",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",le="0.05",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",le="0.075",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",le="0.1",} 0.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",le="0.25",} 1.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",le="0.5",} 1.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",le="1.0",} 26.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",le="2.0",} 26.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",le="5.0",} 26.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",le="10.0",} 26.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",le="+Inf",} 26.0
+grpc_server_handled_latency_seconds_count{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",} 26.0
+grpc_server_handled_latency_seconds_sum{grpc_type="UNARY",grpc_service="improbable.platform.runtime.HealthCheckService",grpc_method="HealthCheck",} 14.241999999999999
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.001",} 16.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.005",} 16.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.01",} 16.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.05",} 20.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.075",} 20.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.1",} 20.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.25",} 20.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="0.5",} 20.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="1.0",} 20.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="2.0",} 20.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="5.0",} 20.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="10.0",} 20.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",le="+Inf",} 20.0
+grpc_server_handled_latency_seconds_count{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",} 20.0
+grpc_server_handled_latency_seconds_sum{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",} 0.063
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.001",} 4.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.005",} 7.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.01",} 7.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.05",} 8.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.075",} 8.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.1",} 8.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.25",} 8.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="0.5",} 8.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="1.0",} 8.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="2.0",} 8.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="5.0",} 8.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="10.0",} 8.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",le="+Inf",} 8.0
+grpc_server_handled_latency_seconds_count{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",} 8.0
+grpc_server_handled_latency_seconds_sum{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",} 0.02700000000000001
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.001",} 2.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.005",} 2.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.01",} 3.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.05",} 3.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.075",} 3.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.1",} 4.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.25",} 4.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="0.5",} 4.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="1.0",} 4.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="2.0",} 4.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="5.0",} 4.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="10.0",} 4.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",le="+Inf",} 4.0
+grpc_server_handled_latency_seconds_count{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",} 4.0
+grpc_server_handled_latency_seconds_sum{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",} 0.08800000000000001
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.001",} 24.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.005",} 24.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.01",} 24.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.05",} 24.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.075",} 24.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.1",} 24.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.25",} 24.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="0.5",} 24.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="1.0",} 24.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="2.0",} 24.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="5.0",} 24.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="10.0",} 24.0
+grpc_server_handled_latency_seconds_bucket{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",le="+Inf",} 24.0
+grpc_server_handled_latency_seconds_count{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",} 24.0
+grpc_server_handled_latency_seconds_sum{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",} 0.009000000000000001
+# HELP improbable_chunk_assignment_responses_willing The number of times a response indicated that the worker was willing to take on work
+# TYPE improbable_chunk_assignment_responses_willing counter
+improbable_chunk_assignment_responses_willing{} 0.0
+# HELP improbable_bridge_upstream_message Counter of messages per type sent from the engine.
+# TYPE improbable_bridge_upstream_message counter
+improbable_bridge_upstream_message{engine_platform="TinyPhysicsEngine",message_type="PositionUpdate",} 6242.0
+improbable_bridge_upstream_message{engine_platform="TinyPhysicsEngine",message_type="AssetLoaded",} 4.0
+improbable_bridge_upstream_message{engine_platform="TinyPhysicsEngine",message_type="EngineReady$",} 1.0
+improbable_bridge_upstream_message{engine_platform="TinyPhysicsEngine",message_type="RotationUpdate",} 6039.0
+improbable_bridge_upstream_message{engine_platform="TinyPhysicsEngine",message_type="WorkerMetrics",} 9.0
+# HELP improbable_grpc_server_responses_sent Number of response messages sent by gRPC server calls  by method.
+# TYPE improbable_grpc_server_responses_sent counter
+improbable_grpc_server_responses_sent{method="improbable.service.fabric.GlobalBrokerService/SubscriptionStream",} 0.0
+improbable_grpc_server_responses_sent{method="improbable.fabric.internal.ServiceDiscoveryInternalService/ListLocalServers",} 4.0
+improbable_grpc_server_responses_sent{method="improbable.service.fabric.GlobalBrokerService/TrackingStream",} 14.0
+improbable_grpc_server_responses_sent{method="improbable.fabric.internal.scaling.ScalingStatsInternalService/GetScalingStats",} 20.0
+improbable_grpc_server_responses_sent{method="improbable.platform.runtime.HealthCheckService/HealthCheck",} 26.0
+improbable_grpc_server_responses_sent{method="improbable.service.fabric.GlobalBrokerService/Ping",} 24.0
+improbable_grpc_server_responses_sent{method="improbable.fabric.internal.BridgeOracleInternalService/RequireWorker",} 8.0
+# HELP improbable_routing_global_endpoints_overridden Number of connections that are currently overridden.
+# TYPE improbable_routing_global_endpoints_overridden gauge
+# HELP improbable_logging_logged_errors The number of times an error was logged.
+# TYPE improbable_logging_logged_errors counter
+improbable_logging_logged_errors{} 0.0
+# HELP improbable_grpc_client_responses_received Number of response messages received by gRPC client calls by method.
+# TYPE improbable_grpc_client_responses_received counter
+improbable_grpc_client_responses_received{method="improbable.service.fabric.GlobalBrokerService/SubscriptionStream",} 0.0
+improbable_grpc_client_responses_received{method="improbable.platform.deployment.ModuleService/List",} 15.0
+improbable_grpc_client_responses_received{method="improbable.platform.inner.config.FabricWorkerFlagzService/List",} 1.0
+improbable_grpc_client_responses_received{method="improbable.service.fabric.GlobalBrokerService/TrackingStream",} 14.0
+improbable_grpc_client_responses_received{method="improbable.fabric.internal.scaling.ScalingStatsInternalService/GetScalingStats",} 20.0
+improbable_grpc_client_responses_received{method="improbable.platform.inner.config.DnsDiscoveryService/Register",} 13.0
+improbable_grpc_client_responses_received{method="improbable.platform.inner.config.FabricFlagzService/Watch",} 0.0
+improbable_grpc_client_responses_received{method="improbable.platform.inner.config.FabricWorkerFlagzService/Watch",} 0.0
+improbable_grpc_client_responses_received{method="improbable.fabric.internal.BridgeOracleInternalService/RequireWorker",} 8.0
+improbable_grpc_client_responses_received{method="improbable.fabric.internal.ServiceDiscoveryInternalService/ListLocalServers",} 4.0
+improbable_grpc_client_responses_received{method="improbable.platform.deployment.NodeService/List",} 7.0
+improbable_grpc_client_responses_received{method="improbable.service.fabric.GlobalBrokerService/Ping",} 24.0
+improbable_grpc_client_responses_received{method="improbable.platform.inner.config.FabricFlagzService/List",} 1.0
+# HELP improbable_entity_gsim_clean_migrations_completed Number of times an Entity completed a GSim migration cleanly.
+# TYPE improbable_entity_gsim_clean_migrations_completed counter
+improbable_entity_gsim_clean_migrations_completed{} 11.0
+# HELP improbable_pubsub_publish_dropped Number of dropped messages.
+# TYPE improbable_pubsub_publish_dropped counter
+improbable_pubsub_publish_dropped{topic="Chunk",} 0.0
+# HELP grpc_client_msg_sent_total Total number of stream messages sent by the client.
+# TYPE grpc_client_msg_sent_total counter
+grpc_client_msg_sent_total{grpc_type="BIDI_STREAMING",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="TrackingStream",} 14.0
+grpc_client_msg_sent_total{grpc_type="CLIENT_STREAMING",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="SubscriptionStream",} 6403.0
+# HELP improbable_bridge_migrations_started The number of bridge migrations started.
+# TYPE improbable_bridge_migrations_started counter
+improbable_bridge_migrations_started{engine_platform="TinyPhysicsEngine",} 0.0
+# HELP improbable_persistence_snapshot_state_completion_latency_milliseconds The latency in milliseconds for an actor to complete a state in the persistence process.
+# TYPE improbable_persistence_snapshot_state_completion_latency_milliseconds histogram
+improbable_persistence_snapshot_state_completion_latency_milliseconds_bucket{state="[Idle]",le="0.005",} 0.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_bucket{state="[Idle]",le="0.01",} 0.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_bucket{state="[Idle]",le="0.025",} 2.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_bucket{state="[Idle]",le="0.05",} 2.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_bucket{state="[Idle]",le="0.075",} 2.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_bucket{state="[Idle]",le="0.1",} 2.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_bucket{state="[Idle]",le="0.25",} 2.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_bucket{state="[Idle]",le="0.5",} 2.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_bucket{state="[Idle]",le="0.75",} 2.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_bucket{state="[Idle]",le="1.0",} 2.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_bucket{state="[Idle]",le="2.5",} 2.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_bucket{state="[Idle]",le="5.0",} 2.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_bucket{state="[Idle]",le="7.5",} 2.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_bucket{state="[Idle]",le="10.0",} 2.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_bucket{state="[Idle]",le="+Inf",} 2.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_count{state="[Idle]",} 2.0
+improbable_persistence_snapshot_state_completion_latency_milliseconds_sum{state="[Idle]",} 0.042600151
+# HELP improbable_network_tcp_sent_packets_queued Number of queued packets inside the link for that peer.
+# TYPE improbable_network_tcp_sent_packets_queued gauge
+improbable_network_tcp_sent_packets_queued{link="ClientTinyPhysicsEngine",} 0.0
+improbable_network_tcp_sent_packets_queued{link="TinyPhysicsEngine",} 0.0
+# HELP improbable_bridge_migrations_finished The number of bridge migrations finished.
+# TYPE improbable_bridge_migrations_finished counter
+improbable_bridge_migrations_finished{engine_platform="TinyPhysicsEngine",} 0.0
+# HELP improbable_network_raknet_exceptions Number of exceptions thrown by the link for a given peer.
+# TYPE improbable_network_raknet_exceptions counter
+# HELP improbable_mailbox_dropped Number of messages dropped as a result of the mailbox being full.
+# TYPE improbable_mailbox_dropped counter
+improbable_mailbox_dropped{normalised_actor_name="StreamingSearchActor",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="BridgeActor",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="GSimModule:21",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="Chunk",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="PersistenceModule1",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="LocalPubSubProvider.1",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="LocalPubSubProvider.0",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="EngineStartupModuleOracleModule1",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="LocalPubSubProvider.3",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="LocalPubSubProvider.2",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="LocalPubSubProvider.5",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="LocalPubSubProvider.4",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="BridgeModule:yoKv8zix1",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="LocalPubSubProvider.7",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="LocalPubSubProvider.6",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="DevWorldRestServer",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="Entity",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="selectors",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="GSimModule:11",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="moduleManager",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="WorldAppSupervisorModule1",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="ReceptionistRestServer",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="GSimPersistenceActor",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="deadLetterListener",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="routerProxy",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="Receptionist",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="ReceptionistModule1",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="IO",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="RouterModule1",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="eventStreamUnsubscriber",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="system",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="improbable.game.GameXLifeCycleManager",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="GSimBridgeModule",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="improbable.game.GameXEntitySpawning",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="DevWorldRestApiModule1",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="WorldAppOracleModule1",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="EntityPingerActor",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="ChunkActorSupervisor",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="user",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="EntityFactory",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="BridgeOracleModule1",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="EntityUser",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="InspectionRestModule1",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="AssetDatabaseRestServer",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="AssetDatabaseModule1",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="queryActor",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="listener",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="BridgeModule:FhUkAzUf1",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="BridgeModuleOracleModule1",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="inspection",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="EngineStartupModule1",} 0.0
+improbable_mailbox_dropped{normalised_actor_name="ProfilingModule1",} 0.0
+# HELP improbable_persistence_overall_snapshotted_entity Counter of the entities that have been snapshotted at the central PersistenceCoordinator.
+# TYPE improbable_persistence_overall_snapshotted_entity counter
+# HELP improbable_network_raknet_sent_packets_queued Number of queued packets inside the link for that peer.
+# TYPE improbable_network_raknet_sent_packets_queued gauge
+# HELP improbable_network_raknet_received_packets Counter of packets received from the given peer.
+# TYPE improbable_network_raknet_received_packets counter
+# HELP improbable_grpc_client_calls_started Number of gRPC client calls initiated by method.
+# TYPE improbable_grpc_client_calls_started counter
+improbable_grpc_client_calls_started{method="improbable.service.fabric.GlobalBrokerService/SubscriptionStream",} 8.0
+improbable_grpc_client_calls_started{method="improbable.platform.deployment.ModuleService/List",} 1.0
+improbable_grpc_client_calls_started{method="improbable.platform.inner.config.FabricWorkerFlagzService/List",} 1.0
+improbable_grpc_client_calls_started{method="improbable.service.fabric.GlobalBrokerService/TrackingStream",} 7.0
+improbable_grpc_client_calls_started{method="improbable.fabric.internal.scaling.ScalingStatsInternalService/GetScalingStats",} 20.0
+improbable_grpc_client_calls_started{method="improbable.platform.inner.config.DnsDiscoveryService/Register",} 13.0
+improbable_grpc_client_calls_started{method="improbable.platform.inner.config.FabricFlagzService/Watch",} 1.0
+improbable_grpc_client_calls_started{method="improbable.platform.inner.config.FabricWorkerFlagzService/Watch",} 1.0
+improbable_grpc_client_calls_started{method="improbable.fabric.internal.BridgeOracleInternalService/RequireWorker",} 8.0
+improbable_grpc_client_calls_started{method="improbable.fabric.internal.ServiceDiscoveryInternalService/ListLocalServers",} 4.0
+improbable_grpc_client_calls_started{method="improbable.platform.deployment.NodeService/List",} 7.0
+improbable_grpc_client_calls_started{method="improbable.service.fabric.GlobalBrokerService/Ping",} 24.0
+improbable_grpc_client_calls_started{method="improbable.platform.inner.config.FabricFlagzService/List",} 1.0
+# HELP improbable_routing_global_endpoints Number of connections that are currently connected.
+# TYPE improbable_routing_global_endpoints gauge
+improbable_routing_global_endpoints{endpoint="Entity",} 124.0
+improbable_routing_global_endpoints{endpoint="Receptionist",} 1.0
+improbable_routing_global_endpoints{endpoint="ChunkActor",} 6400.0
+improbable_routing_global_endpoints{endpoint="General",} 1.0
+improbable_routing_global_endpoints{endpoint="BridgeOracle",} 1.0
+improbable_routing_global_endpoints{endpoint="Singleton",} 5.0
+improbable_routing_global_endpoints{endpoint="Module",} 8.0
+improbable_routing_global_endpoints{endpoint="WorldApp",} 2.0
+improbable_routing_global_endpoints{endpoint="EntitySupervisor",} 124.0
+improbable_routing_global_endpoints{endpoint="Bridge",} 2.0
+# HELP improbable_bridge_downstream_message_dropped Counter of messages per type sent to the engine that were dropped.
+# TYPE improbable_bridge_downstream_message_dropped counter
+# HELP improbable_chunk_chunk_bridge_subscription_count Histogram of how many bridges are subscribed to a chunk. Used for measuring client density.
+# TYPE improbable_chunk_chunk_bridge_subscription_count histogram
+# HELP improbable_mailbox_latency How long a message stays in the mailbox in Seconds
+# TYPE improbable_mailbox_latency histogram
+improbable_mailbox_latency_bucket{normalised_actor_name="StreamingSearchActor",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="StreamingSearchActor",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="StreamingSearchActor",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="StreamingSearchActor",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="StreamingSearchActor",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="StreamingSearchActor",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="StreamingSearchActor",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="StreamingSearchActor",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="StreamingSearchActor",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="StreamingSearchActor",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeActor",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeActor",le="1.0E-4",} 5.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeActor",le="0.001",} 12.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeActor",le="0.01",} 13.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeActor",le="0.1",} 13.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeActor",le="1.0",} 13.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeActor",le="10.0",} 13.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeActor",le="+Inf",} 13.0
+improbable_mailbox_latency_count{normalised_actor_name="BridgeActor",} 13.0
+improbable_mailbox_latency_sum{normalised_actor_name="BridgeActor",} 0.008897132
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:21",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:21",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:21",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:21",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:21",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:21",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:21",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:21",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="GSimModule:21",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="GSimModule:21",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Chunk",le="1.0E-5",} 4.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Chunk",le="1.0E-4",} 8.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Chunk",le="0.001",} 11.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Chunk",le="0.01",} 11.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Chunk",le="0.1",} 11.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Chunk",le="1.0",} 11.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Chunk",le="10.0",} 11.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Chunk",le="+Inf",} 11.0
+improbable_mailbox_latency_count{normalised_actor_name="Chunk",} 11.0
+improbable_mailbox_latency_sum{normalised_actor_name="Chunk",} 9.207110000000001E-4
+improbable_mailbox_latency_bucket{normalised_actor_name="PersistenceModule1",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="PersistenceModule1",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="PersistenceModule1",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="PersistenceModule1",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="PersistenceModule1",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="PersistenceModule1",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="PersistenceModule1",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="PersistenceModule1",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="PersistenceModule1",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="PersistenceModule1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.1",le="1.0E-5",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.1",le="1.0E-4",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.1",le="0.001",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.1",le="0.01",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.1",le="0.1",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.1",le="1.0",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.1",le="10.0",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.1",le="+Inf",} 1.0
+improbable_mailbox_latency_count{normalised_actor_name="LocalPubSubProvider.1",} 1.0
+improbable_mailbox_latency_sum{normalised_actor_name="LocalPubSubProvider.1",} 5.584E-6
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.0",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.0",le="1.0E-4",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.0",le="0.001",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.0",le="0.01",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.0",le="0.1",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.0",le="1.0",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.0",le="10.0",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.0",le="+Inf",} 1.0
+improbable_mailbox_latency_count{normalised_actor_name="LocalPubSubProvider.0",} 1.0
+improbable_mailbox_latency_sum{normalised_actor_name="LocalPubSubProvider.0",} 3.1527E-5
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModuleOracleModule1",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModuleOracleModule1",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModuleOracleModule1",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModuleOracleModule1",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModuleOracleModule1",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModuleOracleModule1",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModuleOracleModule1",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModuleOracleModule1",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="EngineStartupModuleOracleModule1",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="EngineStartupModuleOracleModule1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.3",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.3",le="1.0E-4",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.3",le="0.001",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.3",le="0.01",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.3",le="0.1",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.3",le="1.0",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.3",le="10.0",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.3",le="+Inf",} 1.0
+improbable_mailbox_latency_count{normalised_actor_name="LocalPubSubProvider.3",} 1.0
+improbable_mailbox_latency_sum{normalised_actor_name="LocalPubSubProvider.3",} 6.0763E-5
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.2",le="1.0E-5",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.2",le="1.0E-4",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.2",le="0.001",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.2",le="0.01",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.2",le="0.1",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.2",le="1.0",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.2",le="10.0",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.2",le="+Inf",} 1.0
+improbable_mailbox_latency_count{normalised_actor_name="LocalPubSubProvider.2",} 1.0
+improbable_mailbox_latency_sum{normalised_actor_name="LocalPubSubProvider.2",} 5.434E-6
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.5",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.5",le="1.0E-4",} 4.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.5",le="0.001",} 9.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.5",le="0.01",} 11.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.5",le="0.1",} 11.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.5",le="1.0",} 11.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.5",le="10.0",} 11.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.5",le="+Inf",} 11.0
+improbable_mailbox_latency_count{normalised_actor_name="LocalPubSubProvider.5",} 11.0
+improbable_mailbox_latency_sum{normalised_actor_name="LocalPubSubProvider.5",} 0.00623275
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.4",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.4",le="1.0E-4",} 2.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.4",le="0.001",} 3.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.4",le="0.01",} 3.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.4",le="0.1",} 3.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.4",le="1.0",} 3.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.4",le="10.0",} 3.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.4",le="+Inf",} 3.0
+improbable_mailbox_latency_count{normalised_actor_name="LocalPubSubProvider.4",} 3.0
+improbable_mailbox_latency_sum{normalised_actor_name="LocalPubSubProvider.4",} 3.47905E-4
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:yoKv8zix1",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:yoKv8zix1",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:yoKv8zix1",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:yoKv8zix1",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:yoKv8zix1",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:yoKv8zix1",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:yoKv8zix1",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:yoKv8zix1",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="BridgeModule:yoKv8zix1",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="BridgeModule:yoKv8zix1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.7",le="1.0E-5",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.7",le="1.0E-4",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.7",le="0.001",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.7",le="0.01",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.7",le="0.1",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.7",le="1.0",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.7",le="10.0",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.7",le="+Inf",} 1.0
+improbable_mailbox_latency_count{normalised_actor_name="LocalPubSubProvider.7",} 1.0
+improbable_mailbox_latency_sum{normalised_actor_name="LocalPubSubProvider.7",} 5.45E-6
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.6",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.6",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.6",le="0.001",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.6",le="0.01",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.6",le="0.1",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.6",le="1.0",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.6",le="10.0",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="LocalPubSubProvider.6",le="+Inf",} 1.0
+improbable_mailbox_latency_count{normalised_actor_name="LocalPubSubProvider.6",} 1.0
+improbable_mailbox_latency_sum{normalised_actor_name="LocalPubSubProvider.6",} 8.49441E-4
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestServer",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestServer",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestServer",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestServer",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestServer",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestServer",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestServer",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestServer",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="DevWorldRestServer",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="DevWorldRestServer",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Entity",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Entity",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Entity",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Entity",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Entity",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Entity",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Entity",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Entity",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="Entity",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="Entity",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="selectors",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="selectors",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="selectors",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="selectors",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="selectors",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="selectors",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="selectors",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="selectors",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="selectors",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="selectors",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:11",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:11",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:11",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:11",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:11",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:11",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:11",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimModule:11",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="GSimModule:11",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="GSimModule:11",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="moduleManager",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="moduleManager",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="moduleManager",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="moduleManager",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="moduleManager",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="moduleManager",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="moduleManager",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="moduleManager",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="moduleManager",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="moduleManager",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppSupervisorModule1",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppSupervisorModule1",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppSupervisorModule1",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppSupervisorModule1",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppSupervisorModule1",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppSupervisorModule1",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppSupervisorModule1",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppSupervisorModule1",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="WorldAppSupervisorModule1",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="WorldAppSupervisorModule1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistRestServer",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistRestServer",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistRestServer",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistRestServer",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistRestServer",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistRestServer",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistRestServer",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistRestServer",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="ReceptionistRestServer",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="ReceptionistRestServer",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimPersistenceActor",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimPersistenceActor",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimPersistenceActor",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimPersistenceActor",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimPersistenceActor",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimPersistenceActor",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimPersistenceActor",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimPersistenceActor",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="GSimPersistenceActor",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="GSimPersistenceActor",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="deadLetterListener",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="deadLetterListener",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="deadLetterListener",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="deadLetterListener",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="deadLetterListener",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="deadLetterListener",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="deadLetterListener",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="deadLetterListener",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="deadLetterListener",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="deadLetterListener",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="routerProxy",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="routerProxy",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="routerProxy",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="routerProxy",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="routerProxy",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="routerProxy",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="routerProxy",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="routerProxy",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="routerProxy",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="routerProxy",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Receptionist",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Receptionist",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Receptionist",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Receptionist",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Receptionist",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Receptionist",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Receptionist",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="Receptionist",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="Receptionist",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="Receptionist",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistModule1",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistModule1",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistModule1",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistModule1",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistModule1",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistModule1",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistModule1",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ReceptionistModule1",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="ReceptionistModule1",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="ReceptionistModule1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="IO",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="IO",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="IO",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="IO",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="IO",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="IO",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="IO",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="IO",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="IO",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="IO",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="RouterModule1",le="1.0E-5",} 1.0
+improbable_mailbox_latency_bucket{normalised_actor_name="RouterModule1",le="1.0E-4",} 3.0
+improbable_mailbox_latency_bucket{normalised_actor_name="RouterModule1",le="0.001",} 4.0
+improbable_mailbox_latency_bucket{normalised_actor_name="RouterModule1",le="0.01",} 6.0
+improbable_mailbox_latency_bucket{normalised_actor_name="RouterModule1",le="0.1",} 7.0
+improbable_mailbox_latency_bucket{normalised_actor_name="RouterModule1",le="1.0",} 7.0
+improbable_mailbox_latency_bucket{normalised_actor_name="RouterModule1",le="10.0",} 7.0
+improbable_mailbox_latency_bucket{normalised_actor_name="RouterModule1",le="+Inf",} 7.0
+improbable_mailbox_latency_count{normalised_actor_name="RouterModule1",} 7.0
+improbable_mailbox_latency_sum{normalised_actor_name="RouterModule1",} 0.020281096000000002
+improbable_mailbox_latency_bucket{normalised_actor_name="eventStreamUnsubscriber",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="eventStreamUnsubscriber",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="eventStreamUnsubscriber",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="eventStreamUnsubscriber",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="eventStreamUnsubscriber",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="eventStreamUnsubscriber",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="eventStreamUnsubscriber",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="eventStreamUnsubscriber",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="eventStreamUnsubscriber",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="eventStreamUnsubscriber",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="system",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="system",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="system",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="system",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="system",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="system",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="system",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="system",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="system",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="system",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXLifeCycleManager",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXLifeCycleManager",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXLifeCycleManager",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXLifeCycleManager",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXLifeCycleManager",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXLifeCycleManager",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXLifeCycleManager",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXLifeCycleManager",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="improbable.game.GameXLifeCycleManager",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="improbable.game.GameXLifeCycleManager",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimBridgeModule",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimBridgeModule",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimBridgeModule",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimBridgeModule",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimBridgeModule",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimBridgeModule",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimBridgeModule",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="GSimBridgeModule",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="GSimBridgeModule",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="GSimBridgeModule",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXEntitySpawning",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXEntitySpawning",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXEntitySpawning",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXEntitySpawning",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXEntitySpawning",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXEntitySpawning",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXEntitySpawning",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="improbable.game.GameXEntitySpawning",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="improbable.game.GameXEntitySpawning",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="improbable.game.GameXEntitySpawning",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestApiModule1",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestApiModule1",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestApiModule1",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestApiModule1",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestApiModule1",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestApiModule1",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestApiModule1",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="DevWorldRestApiModule1",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="DevWorldRestApiModule1",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="DevWorldRestApiModule1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppOracleModule1",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppOracleModule1",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppOracleModule1",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppOracleModule1",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppOracleModule1",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppOracleModule1",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppOracleModule1",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="WorldAppOracleModule1",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="WorldAppOracleModule1",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="WorldAppOracleModule1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityPingerActor",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityPingerActor",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityPingerActor",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityPingerActor",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityPingerActor",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityPingerActor",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityPingerActor",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityPingerActor",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="EntityPingerActor",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="EntityPingerActor",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ChunkActorSupervisor",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ChunkActorSupervisor",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ChunkActorSupervisor",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ChunkActorSupervisor",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ChunkActorSupervisor",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ChunkActorSupervisor",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ChunkActorSupervisor",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ChunkActorSupervisor",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="ChunkActorSupervisor",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="ChunkActorSupervisor",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="user",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="user",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="user",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="user",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="user",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="user",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="user",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="user",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="user",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="user",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityFactory",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityFactory",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityFactory",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityFactory",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityFactory",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityFactory",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityFactory",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityFactory",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="EntityFactory",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="EntityFactory",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeOracleModule1",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeOracleModule1",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeOracleModule1",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeOracleModule1",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeOracleModule1",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeOracleModule1",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeOracleModule1",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeOracleModule1",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="BridgeOracleModule1",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="BridgeOracleModule1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityUser",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityUser",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityUser",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityUser",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityUser",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityUser",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityUser",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EntityUser",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="EntityUser",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="EntityUser",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="InspectionRestModule1",le="1.0E-5",} 5.0
+improbable_mailbox_latency_bucket{normalised_actor_name="InspectionRestModule1",le="1.0E-4",} 12.0
+improbable_mailbox_latency_bucket{normalised_actor_name="InspectionRestModule1",le="0.001",} 20.0
+improbable_mailbox_latency_bucket{normalised_actor_name="InspectionRestModule1",le="0.01",} 20.0
+improbable_mailbox_latency_bucket{normalised_actor_name="InspectionRestModule1",le="0.1",} 20.0
+improbable_mailbox_latency_bucket{normalised_actor_name="InspectionRestModule1",le="1.0",} 20.0
+improbable_mailbox_latency_bucket{normalised_actor_name="InspectionRestModule1",le="10.0",} 20.0
+improbable_mailbox_latency_bucket{normalised_actor_name="InspectionRestModule1",le="+Inf",} 20.0
+improbable_mailbox_latency_count{normalised_actor_name="InspectionRestModule1",} 20.0
+improbable_mailbox_latency_sum{normalised_actor_name="InspectionRestModule1",} 0.0028087370000000004
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseRestServer",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseRestServer",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseRestServer",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseRestServer",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseRestServer",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseRestServer",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseRestServer",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseRestServer",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="AssetDatabaseRestServer",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="AssetDatabaseRestServer",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseModule1",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseModule1",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseModule1",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseModule1",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseModule1",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseModule1",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseModule1",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="AssetDatabaseModule1",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="AssetDatabaseModule1",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="AssetDatabaseModule1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="queryActor",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="queryActor",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="queryActor",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="queryActor",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="queryActor",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="queryActor",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="queryActor",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="queryActor",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="queryActor",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="queryActor",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="listener",le="1.0E-5",} 2.0
+improbable_mailbox_latency_bucket{normalised_actor_name="listener",le="1.0E-4",} 3.0
+improbable_mailbox_latency_bucket{normalised_actor_name="listener",le="0.001",} 3.0
+improbable_mailbox_latency_bucket{normalised_actor_name="listener",le="0.01",} 3.0
+improbable_mailbox_latency_bucket{normalised_actor_name="listener",le="0.1",} 3.0
+improbable_mailbox_latency_bucket{normalised_actor_name="listener",le="1.0",} 3.0
+improbable_mailbox_latency_bucket{normalised_actor_name="listener",le="10.0",} 3.0
+improbable_mailbox_latency_bucket{normalised_actor_name="listener",le="+Inf",} 3.0
+improbable_mailbox_latency_count{normalised_actor_name="listener",} 3.0
+improbable_mailbox_latency_sum{normalised_actor_name="listener",} 2.5240000000000002E-5
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:FhUkAzUf1",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:FhUkAzUf1",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:FhUkAzUf1",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:FhUkAzUf1",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:FhUkAzUf1",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:FhUkAzUf1",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:FhUkAzUf1",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModule:FhUkAzUf1",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="BridgeModule:FhUkAzUf1",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="BridgeModule:FhUkAzUf1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModuleOracleModule1",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModuleOracleModule1",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModuleOracleModule1",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModuleOracleModule1",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModuleOracleModule1",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModuleOracleModule1",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModuleOracleModule1",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="BridgeModuleOracleModule1",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="BridgeModuleOracleModule1",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="BridgeModuleOracleModule1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="inspection",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="inspection",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="inspection",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="inspection",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="inspection",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="inspection",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="inspection",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="inspection",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="inspection",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="inspection",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModule1",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModule1",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModule1",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModule1",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModule1",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModule1",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModule1",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="EngineStartupModule1",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="EngineStartupModule1",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="EngineStartupModule1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ProfilingModule1",le="1.0E-5",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ProfilingModule1",le="1.0E-4",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ProfilingModule1",le="0.001",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ProfilingModule1",le="0.01",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ProfilingModule1",le="0.1",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ProfilingModule1",le="1.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ProfilingModule1",le="10.0",} 0.0
+improbable_mailbox_latency_bucket{normalised_actor_name="ProfilingModule1",le="+Inf",} 0.0
+improbable_mailbox_latency_count{normalised_actor_name="ProfilingModule1",} 0.0
+improbable_mailbox_latency_sum{normalised_actor_name="ProfilingModule1",} 0.0
+# HELP improbable_engine_started Number of started engines, per platform (engine type).
+# TYPE improbable_engine_started counter
+improbable_engine_started{platform="TinyPhysicsEngine",} 1.0
+# HELP improbable_bridge_roundtrip_latency_to_chunk Histogram of roundtrip latency between Bridge and Chunk (seconds).
+# TYPE improbable_bridge_roundtrip_latency_to_chunk histogram
+improbable_bridge_roundtrip_latency_to_chunk_bucket{le="5.0E-4",} 0.0
+improbable_bridge_roundtrip_latency_to_chunk_bucket{le="0.001",} 0.0
+improbable_bridge_roundtrip_latency_to_chunk_bucket{le="0.002",} 2.0
+improbable_bridge_roundtrip_latency_to_chunk_bucket{le="0.004",} 2.0
+improbable_bridge_roundtrip_latency_to_chunk_bucket{le="0.008",} 2.0
+improbable_bridge_roundtrip_latency_to_chunk_bucket{le="0.016",} 2.0
+improbable_bridge_roundtrip_latency_to_chunk_bucket{le="0.05",} 2.0
+improbable_bridge_roundtrip_latency_to_chunk_bucket{le="0.1",} 2.0
+improbable_bridge_roundtrip_latency_to_chunk_bucket{le="0.2",} 2.0
+improbable_bridge_roundtrip_latency_to_chunk_bucket{le="0.5",} 2.0
+improbable_bridge_roundtrip_latency_to_chunk_bucket{le="1.0",} 2.0
+improbable_bridge_roundtrip_latency_to_chunk_bucket{le="5.0",} 2.0
+improbable_bridge_roundtrip_latency_to_chunk_bucket{le="10.0",} 2.0
+improbable_bridge_roundtrip_latency_to_chunk_bucket{le="60.0",} 2.0
+improbable_bridge_roundtrip_latency_to_chunk_bucket{le="+Inf",} 2.0
+improbable_bridge_roundtrip_latency_to_chunk_count{} 2.0
+improbable_bridge_roundtrip_latency_to_chunk_sum{} 0.002996318
+# HELP improbable_entity_tag_query_fanout Remote JVMs involved in tag queries.
+# TYPE improbable_entity_tag_query_fanout histogram
+improbable_entity_tag_query_fanout_bucket{le="1.0",} 0.0
+improbable_entity_tag_query_fanout_bucket{le="2.0",} 10.0
+improbable_entity_tag_query_fanout_bucket{le="3.0",} 10.0
+improbable_entity_tag_query_fanout_bucket{le="4.0",} 10.0
+improbable_entity_tag_query_fanout_bucket{le="5.0",} 10.0
+improbable_entity_tag_query_fanout_bucket{le="6.0",} 10.0
+improbable_entity_tag_query_fanout_bucket{le="7.0",} 10.0
+improbable_entity_tag_query_fanout_bucket{le="8.0",} 10.0
+improbable_entity_tag_query_fanout_bucket{le="9.0",} 10.0
+improbable_entity_tag_query_fanout_bucket{le="10.0",} 10.0
+improbable_entity_tag_query_fanout_bucket{le="11.0",} 10.0
+improbable_entity_tag_query_fanout_bucket{le="12.0",} 10.0
+improbable_entity_tag_query_fanout_bucket{le="13.0",} 10.0
+improbable_entity_tag_query_fanout_bucket{le="14.0",} 10.0
+improbable_entity_tag_query_fanout_bucket{le="15.0",} 10.0
+improbable_entity_tag_query_fanout_bucket{le="16.0",} 10.0
+improbable_entity_tag_query_fanout_bucket{le="+Inf",} 10.0
+improbable_entity_tag_query_fanout_count{} 10.0
+improbable_entity_tag_query_fanout_sum{} 20.0
+# HELP improbable_bridge_actor_state_bridge_assignments_accepted Counter for the number of bridge assignment requests to which the response was 'yes'.
+# TYPE improbable_bridge_actor_state_bridge_assignments_accepted counter
+improbable_bridge_actor_state_bridge_assignments_accepted{} 0.0
+# HELP improbable_pubsub_local_fanout_time_sec Time in seconds taken by local pubsub fanout.
+# TYPE improbable_pubsub_local_fanout_time_sec histogram
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Constraint",le="5.0E-4",} 11.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Constraint",le="0.001",} 11.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Constraint",le="0.002",} 11.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Constraint",le="0.004",} 11.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Constraint",le="0.008",} 11.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Constraint",le="0.016",} 11.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Constraint",le="0.05",} 11.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Constraint",le="0.1",} 11.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Constraint",le="0.2",} 11.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Constraint",le="0.5",} 11.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Constraint",le="1.0",} 11.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Constraint",le="+Inf",} 11.0
+improbable_pubsub_local_fanout_time_sec_count{topic="Constraint",} 11.0
+improbable_pubsub_local_fanout_time_sec_sum{topic="Constraint",} 0.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Chunk",le="5.0E-4",} 13490.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Chunk",le="0.001",} 13490.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Chunk",le="0.002",} 13490.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Chunk",le="0.004",} 13490.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Chunk",le="0.008",} 13490.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Chunk",le="0.016",} 13490.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Chunk",le="0.05",} 13490.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Chunk",le="0.1",} 13490.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Chunk",le="0.2",} 13490.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Chunk",le="0.5",} 13490.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Chunk",le="1.0",} 13490.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Chunk",le="+Inf",} 13490.0
+improbable_pubsub_local_fanout_time_sec_count{topic="Chunk",} 13490.0
+improbable_pubsub_local_fanout_time_sec_sum{topic="Chunk",} 0.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Global",le="5.0E-4",} 1.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Global",le="0.001",} 1.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Global",le="0.002",} 1.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Global",le="0.004",} 1.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Global",le="0.008",} 1.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Global",le="0.016",} 1.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Global",le="0.05",} 1.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Global",le="0.1",} 1.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Global",le="0.2",} 1.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Global",le="0.5",} 1.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Global",le="1.0",} 1.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Global",le="+Inf",} 1.0
+improbable_pubsub_local_fanout_time_sec_count{topic="Global",} 1.0
+improbable_pubsub_local_fanout_time_sec_sum{topic="Global",} 0.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Bridge",le="5.0E-4",} 4.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Bridge",le="0.001",} 4.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Bridge",le="0.002",} 4.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Bridge",le="0.004",} 4.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Bridge",le="0.008",} 4.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Bridge",le="0.016",} 4.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Bridge",le="0.05",} 4.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Bridge",le="0.1",} 4.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Bridge",le="0.2",} 4.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Bridge",le="0.5",} 4.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Bridge",le="1.0",} 4.0
+improbable_pubsub_local_fanout_time_sec_bucket{topic="Bridge",le="+Inf",} 4.0
+improbable_pubsub_local_fanout_time_sec_count{topic="Bridge",} 4.0
+improbable_pubsub_local_fanout_time_sec_sum{topic="Bridge",} 0.0
+# HELP improbable_pubsub_subscriptions_local Number of local subscriptions of a topic of a given type.
+# TYPE improbable_pubsub_subscriptions_local gauge
+improbable_pubsub_subscriptions_local{topic="Constraint",} 5.0
+improbable_pubsub_subscriptions_local{topic="Chunk",} 6497.0
+improbable_pubsub_subscriptions_local{topic="Global",} 1.0
+improbable_pubsub_subscriptions_local{topic="Bridge",} 1.0
+# HELP improbable_persistence_snapshot_load_latency_milliseconds The latency in milliseconds to load a snapshot. Buckets between 1 ms and 5 hours.
+# TYPE improbable_persistence_snapshot_load_latency_milliseconds histogram
+improbable_persistence_snapshot_load_latency_milliseconds_bucket{le="1.0",} 0.0
+improbable_persistence_snapshot_load_latency_milliseconds_bucket{le="10.0",} 0.0
+improbable_persistence_snapshot_load_latency_milliseconds_bucket{le="100.0",} 0.0
+improbable_persistence_snapshot_load_latency_milliseconds_bucket{le="500.0",} 0.0
+improbable_persistence_snapshot_load_latency_milliseconds_bucket{le="1000.0",} 0.0
+improbable_persistence_snapshot_load_latency_milliseconds_bucket{le="2000.0",} 0.0
+improbable_persistence_snapshot_load_latency_milliseconds_bucket{le="5000.0",} 0.0
+improbable_persistence_snapshot_load_latency_milliseconds_bucket{le="10000.0",} 0.0
+improbable_persistence_snapshot_load_latency_milliseconds_bucket{le="30000.0",} 0.0
+improbable_persistence_snapshot_load_latency_milliseconds_bucket{le="60000.0",} 0.0
+improbable_persistence_snapshot_load_latency_milliseconds_bucket{le="600000.0",} 0.0
+improbable_persistence_snapshot_load_latency_milliseconds_bucket{le="3600000.0",} 0.0
+improbable_persistence_snapshot_load_latency_milliseconds_bucket{le="1.8E7",} 0.0
+improbable_persistence_snapshot_load_latency_milliseconds_bucket{le="+Inf",} 0.0
+improbable_persistence_snapshot_load_latency_milliseconds_count{} 0.0
+improbable_persistence_snapshot_load_latency_milliseconds_sum{} 0.0
+# HELP improbable_entity_from_engine_update Number of state updates from engines
+# TYPE improbable_entity_from_engine_update counter
+# HELP improbable_mailbox_size The max mailbox queue size in the last sample interval for an actor type.
+# TYPE improbable_mailbox_size gauge
+improbable_mailbox_size{normalised_actor_name="StreamingSearchActor",} 0.0
+improbable_mailbox_size{normalised_actor_name="BridgeActor",} 1.0
+improbable_mailbox_size{normalised_actor_name="GSimModule:21",} 0.0
+improbable_mailbox_size{normalised_actor_name="Chunk",} 2.0
+improbable_mailbox_size{normalised_actor_name="PersistenceModule1",} 0.0
+improbable_mailbox_size{normalised_actor_name="LocalPubSubProvider.1",} 0.0
+improbable_mailbox_size{normalised_actor_name="LocalPubSubProvider.0",} 0.0
+improbable_mailbox_size{normalised_actor_name="EngineStartupModuleOracleModule1",} 0.0
+improbable_mailbox_size{normalised_actor_name="LocalPubSubProvider.3",} 0.0
+improbable_mailbox_size{normalised_actor_name="LocalPubSubProvider.2",} 0.0
+improbable_mailbox_size{normalised_actor_name="LocalPubSubProvider.5",} 0.0
+improbable_mailbox_size{normalised_actor_name="LocalPubSubProvider.4",} 0.0
+improbable_mailbox_size{normalised_actor_name="BridgeModule:yoKv8zix1",} 0.0
+improbable_mailbox_size{normalised_actor_name="LocalPubSubProvider.7",} 0.0
+improbable_mailbox_size{normalised_actor_name="LocalPubSubProvider.6",} 0.0
+improbable_mailbox_size{normalised_actor_name="DevWorldRestServer",} 0.0
+improbable_mailbox_size{normalised_actor_name="Entity",} 0.0
+improbable_mailbox_size{normalised_actor_name="selectors",} 0.0
+improbable_mailbox_size{normalised_actor_name="GSimModule:11",} 0.0
+improbable_mailbox_size{normalised_actor_name="moduleManager",} 0.0
+improbable_mailbox_size{normalised_actor_name="WorldAppSupervisorModule1",} 0.0
+improbable_mailbox_size{normalised_actor_name="ReceptionistRestServer",} 0.0
+improbable_mailbox_size{normalised_actor_name="GSimPersistenceActor",} 0.0
+improbable_mailbox_size{normalised_actor_name="deadLetterListener",} 0.0
+improbable_mailbox_size{normalised_actor_name="routerProxy",} 0.0
+improbable_mailbox_size{normalised_actor_name="Receptionist",} 0.0
+improbable_mailbox_size{normalised_actor_name="ReceptionistModule1",} 0.0
+improbable_mailbox_size{normalised_actor_name="IO",} 0.0
+improbable_mailbox_size{normalised_actor_name="RouterModule1",} 0.0
+improbable_mailbox_size{normalised_actor_name="eventStreamUnsubscriber",} 0.0
+improbable_mailbox_size{normalised_actor_name="system",} 0.0
+improbable_mailbox_size{normalised_actor_name="improbable.game.GameXLifeCycleManager",} 0.0
+improbable_mailbox_size{normalised_actor_name="GSimBridgeModule",} 0.0
+improbable_mailbox_size{normalised_actor_name="improbable.game.GameXEntitySpawning",} 0.0
+improbable_mailbox_size{normalised_actor_name="DevWorldRestApiModule1",} 0.0
+improbable_mailbox_size{normalised_actor_name="WorldAppOracleModule1",} 0.0
+improbable_mailbox_size{normalised_actor_name="EntityPingerActor",} 0.0
+improbable_mailbox_size{normalised_actor_name="ChunkActorSupervisor",} 0.0
+improbable_mailbox_size{normalised_actor_name="user",} 0.0
+improbable_mailbox_size{normalised_actor_name="EntityFactory",} 0.0
+improbable_mailbox_size{normalised_actor_name="BridgeOracleModule1",} 0.0
+improbable_mailbox_size{normalised_actor_name="EntityUser",} 0.0
+improbable_mailbox_size{normalised_actor_name="InspectionRestModule1",} 0.0
+improbable_mailbox_size{normalised_actor_name="AssetDatabaseRestServer",} 0.0
+improbable_mailbox_size{normalised_actor_name="AssetDatabaseModule1",} 0.0
+improbable_mailbox_size{normalised_actor_name="queryActor",} 0.0
+improbable_mailbox_size{normalised_actor_name="listener",} 0.0
+improbable_mailbox_size{normalised_actor_name="BridgeModule:FhUkAzUf1",} 0.0
+improbable_mailbox_size{normalised_actor_name="BridgeModuleOracleModule1",} 0.0
+improbable_mailbox_size{normalised_actor_name="inspection",} 0.0
+improbable_mailbox_size{normalised_actor_name="EngineStartupModule1",} 0.0
+improbable_mailbox_size{normalised_actor_name="ProfilingModule1",} 0.0
+# HELP improbable_entity_spatial_index_updates Number of spatial index update (add/remove) operations
+# TYPE improbable_entity_spatial_index_updates counter
+improbable_entity_spatial_index_updates{} 1254.0
+# HELP improbable_tinyengine_message Number of messages sent.
+# TYPE improbable_tinyengine_message counter
+improbable_tinyengine_message{} 12336.0
+# HELP improbable_inspection_get_requests_processed The number of GET requests processed so far
+# TYPE improbable_inspection_get_requests_processed counter
+improbable_inspection_get_requests_processed{} 33.0
+# HELP improbable_network_raknet_packet_loss_fraction Fraction of RELIABLE packets lost to given peer, as reported by stats.
+# TYPE improbable_network_raknet_packet_loss_fraction gauge
+# HELP improbable_bridge_oracle_bridge_status Number of bridges that have received load balancing status at least once.
+# TYPE improbable_bridge_oracle_bridge_status gauge
+improbable_bridge_oracle_bridge_status{} 1.0
+# HELP improbable_chunk_assignment_responses_dropped The number of times a received response was dropped
+# TYPE improbable_chunk_assignment_responses_dropped counter
+# HELP improbable_chunk_num_published_entities The number of times publishEntities() was called with multiple entities
+# TYPE improbable_chunk_num_published_entities counter
+improbable_chunk_num_published_entities{} 1.0
+# HELP improbable_bridge_latency_requests_sent Counter of latency requests sent by bridges.
+# TYPE improbable_bridge_latency_requests_sent counter
+improbable_bridge_latency_requests_sent{} 2.0
+# HELP improbable_bridge_oracle_worker_scaler_reconciliations The number of times the reconciliation loop of the worker scaler actually did something.
+# TYPE improbable_bridge_oracle_worker_scaler_reconciliations counter
+improbable_bridge_oracle_worker_scaler_reconciliations{} 1.0
+# HELP improbable_entity_latency Ping latency summary for entities.
+# TYPE improbable_entity_latency summary
+improbable_entity_latency_count{} 471.0
+improbable_entity_latency_sum{} 2.1471607E8
+# HELP improbable_bridge_oracle_scaling_advisor_num_required_workers Tracks the current opinion of the scaling advisor on the number of required workers
+# TYPE improbable_bridge_oracle_scaling_advisor_num_required_workers gauge
+improbable_bridge_oracle_scaling_advisor_num_required_workers{} 0.0
+# HELP improbable_bridge_oracle_engine_constraint_unsatisfied Number of unsatisfied engine constraints.
+# TYPE improbable_bridge_oracle_engine_constraint_unsatisfied gauge
+improbable_bridge_oracle_engine_constraint_unsatisfied{constraint_type="improbable.papi.engine.ProtoEngineConstraint",} 0.0
+# HELP improbable_chunk_assignment_request_timeout The number of times an in-flight assignment request was abandoned due to the bridge failing to respond
+# TYPE improbable_chunk_assignment_request_timeout counter
+improbable_chunk_assignment_request_timeout{} 0.0
+# HELP improbable_tinyengine_universe_tick Universe tick duration per tick in ns.
+# TYPE improbable_tinyengine_universe_tick summary
+improbable_tinyengine_universe_tick_count{} 406.0
+improbable_tinyengine_universe_tick_sum{} 9.9E7
+# HELP improbable_actor_running Number of actors running.
+# TYPE improbable_actor_running gauge
+improbable_actor_running{actor="DevWorldRestApiModuleActor",} 1.0
+improbable_actor_running{actor="EntityUserActor",} 124.0
+improbable_actor_running{actor="BridgeActor",} 1.0
+improbable_actor_running{actor="LocalPubSubActor",} 8.0
+improbable_actor_running{actor="GSimBridgeActor",} 2.0
+improbable_actor_running{actor="GSimActor",} 2.0
+improbable_actor_running{actor="InternalAssetDatabaseActor",} 1.0
+improbable_actor_running{actor="InspectionRestModuleActor",} 1.0
+improbable_actor_running{actor="WorldAppSupervisorModuleActor",} 1.0
+improbable_actor_running{actor="GSimEntitySearchActor",} 16.0
+improbable_actor_running{actor="BridgeOracle",} 1.0
+improbable_actor_running{actor="PersistenceModuleActor",} 1.0
+improbable_actor_running{actor="EntityPingerActor",} 2.0
+improbable_actor_running{actor="ChunkActorSupervisor",} 2.0
+improbable_actor_running{actor="WorldAppOracle",} 1.0
+improbable_actor_running{actor="WorldAppActor",} 2.0
+improbable_actor_running{actor="RouterActor",} 1.0
+improbable_actor_running{actor="EngineStartupModuleActor",} 1.0
+improbable_actor_running{actor="ProfilingModuleActor",} 1.0
+improbable_actor_running{actor="EntityActorFactory",} 2.0
+improbable_actor_running{actor="BridgeModuleActor",} 2.0
+improbable_actor_running{actor="ResponseStreamer",} 1.0
+improbable_actor_running{actor="ModuleManager",} 1.0
+improbable_actor_running{actor="EngineStartupModuleOracleActor",} 1.0
+improbable_actor_running{actor="GSimPersistenceActor",} 2.0
+improbable_actor_running{actor="EntityActor",} 124.0
+improbable_actor_running{actor="ChunkActor",} 6400.0
+improbable_actor_running{actor="BridgeModuleOracleActor",} 1.0
+improbable_actor_running{actor="ReceptionistActor",} 1.0
+improbable_actor_running{actor="GSimEntitySearchLoadBalancer",} 2.0
+improbable_actor_running{actor="DebugBridge",} 1.0
+improbable_actor_running{actor="ReceptionistMainActor",} 1.0
+improbable_actor_running{actor="StreamingEntitySearchActor",} 2.0
+# HELP improbable_pubsub_publish_remote_time_sec Time in seconds taken by remote publish operations.
+# TYPE improbable_pubsub_publish_remote_time_sec histogram
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Constraint",le="5.0E-4",} 11.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Constraint",le="0.001",} 11.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Constraint",le="0.002",} 11.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Constraint",le="0.004",} 11.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Constraint",le="0.008",} 11.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Constraint",le="0.016",} 11.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Constraint",le="0.05",} 11.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Constraint",le="0.1",} 11.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Constraint",le="0.2",} 11.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Constraint",le="0.5",} 11.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Constraint",le="1.0",} 11.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Constraint",le="+Inf",} 11.0
+improbable_pubsub_publish_remote_time_sec_count{topic="Constraint",} 11.0
+improbable_pubsub_publish_remote_time_sec_sum{topic="Constraint",} 0.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Chunk",le="5.0E-4",} 13490.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Chunk",le="0.001",} 13490.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Chunk",le="0.002",} 13490.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Chunk",le="0.004",} 13490.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Chunk",le="0.008",} 13490.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Chunk",le="0.016",} 13490.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Chunk",le="0.05",} 13490.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Chunk",le="0.1",} 13490.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Chunk",le="0.2",} 13490.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Chunk",le="0.5",} 13490.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Chunk",le="1.0",} 13490.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Chunk",le="+Inf",} 13490.0
+improbable_pubsub_publish_remote_time_sec_count{topic="Chunk",} 13490.0
+improbable_pubsub_publish_remote_time_sec_sum{topic="Chunk",} 0.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Global",le="5.0E-4",} 1.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Global",le="0.001",} 1.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Global",le="0.002",} 1.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Global",le="0.004",} 1.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Global",le="0.008",} 1.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Global",le="0.016",} 1.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Global",le="0.05",} 1.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Global",le="0.1",} 1.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Global",le="0.2",} 1.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Global",le="0.5",} 1.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Global",le="1.0",} 1.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Global",le="+Inf",} 1.0
+improbable_pubsub_publish_remote_time_sec_count{topic="Global",} 1.0
+improbable_pubsub_publish_remote_time_sec_sum{topic="Global",} 0.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Bridge",le="5.0E-4",} 4.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Bridge",le="0.001",} 4.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Bridge",le="0.002",} 4.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Bridge",le="0.004",} 4.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Bridge",le="0.008",} 4.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Bridge",le="0.016",} 4.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Bridge",le="0.05",} 4.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Bridge",le="0.1",} 4.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Bridge",le="0.2",} 4.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Bridge",le="0.5",} 4.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Bridge",le="1.0",} 4.0
+improbable_pubsub_publish_remote_time_sec_bucket{topic="Bridge",le="+Inf",} 4.0
+improbable_pubsub_publish_remote_time_sec_count{topic="Bridge",} 4.0
+improbable_pubsub_publish_remote_time_sec_sum{topic="Bridge",} 0.0
+# HELP improbable_routerProxy_proxied_message Counter of the messages that have been proxied to the main router by the local router proxy.
+# TYPE improbable_routerProxy_proxied_message counter
+improbable_routerProxy_proxied_message{send_type="tell",router_function="register_endpoint",} 7002.0
+improbable_routerProxy_proxied_message{send_type="ask",router_function="proxy",} 139.0
+improbable_routerProxy_proxied_message{send_type="tell",router_function="proxy",} 6.0
+improbable_routerProxy_proxied_message{send_type="tell",router_function="unregister_endpoint",} 334.0
+# HELP improbable_network_tcp_packet_loss_fraction Fraction of RELIABLE packets lost to given peer, as reported by stats.
+# TYPE improbable_network_tcp_packet_loss_fraction gauge
+improbable_network_tcp_packet_loss_fraction{link="ClientTinyPhysicsEngine",} 0.0
+improbable_network_tcp_packet_loss_fraction{link="TinyPhysicsEngine",} 0.0
+# HELP improbable_grpc_server_calls_started Number of gRPC server calls initiated by method.
+# TYPE improbable_grpc_server_calls_started counter
+improbable_grpc_server_calls_started{method="improbable.service.fabric.GlobalBrokerService/SubscriptionStream",} 8.0
+improbable_grpc_server_calls_started{method="improbable.fabric.internal.ServiceDiscoveryInternalService/ListLocalServers",} 4.0
+improbable_grpc_server_calls_started{method="improbable.service.fabric.GlobalBrokerService/TrackingStream",} 7.0
+improbable_grpc_server_calls_started{method="improbable.fabric.internal.scaling.ScalingStatsInternalService/GetScalingStats",} 20.0
+improbable_grpc_server_calls_started{method="improbable.platform.runtime.HealthCheckService/HealthCheck",} 26.0
+improbable_grpc_server_calls_started{method="improbable.service.fabric.GlobalBrokerService/Ping",} 24.0
+improbable_grpc_server_calls_started{method="improbable.fabric.internal.BridgeOracleInternalService/RequireWorker",} 8.0
+# HELP improbable_bridge_actor_state_bridge_assignments_rejected Counter for the number of bridge assignment requests to which the response was 'no'.
+# TYPE improbable_bridge_actor_state_bridge_assignments_rejected counter
+improbable_bridge_actor_state_bridge_assignments_rejected{} 0.0
+# HELP improbable_network_raknet_hard_disconnects Number of hard disconnects for a given peer.
+# TYPE improbable_network_raknet_hard_disconnects counter
+# HELP improbable_bridge_oracle_engine_start_request Number of engine start requests.
+# TYPE improbable_bridge_oracle_engine_start_request counter
+improbable_bridge_oracle_engine_start_request{cause="WorkerScaler",} 1.0
+# HELP improbable_tinyengine_engine_crash Number of times an engine got so overloaded that we simulated a crash.
+# TYPE improbable_tinyengine_engine_crash counter
+improbable_tinyengine_engine_crash{} 0.0
+# HELP improbable_routing_global_messages_buffered Number of messages that are currently buffered.
+# TYPE improbable_routing_global_messages_buffered gauge
+improbable_routing_global_messages_buffered{endpoint="Bridge",message_type="DistributedBridgeEntities",} 0.0
+improbable_routing_global_messages_buffered{endpoint="Singleton",message_type="RegisterResourceSupervisor",} 0.0
+improbable_routing_global_messages_buffered{endpoint="Entity",message_type="StateUpdateWrapperMsg",} 3.0
+improbable_routing_global_messages_buffered{endpoint="Entity",message_type="Ping",} 0.0
+# HELP improbable_network_tcp_running Number of instances that are currently running.
+# TYPE improbable_network_tcp_running gauge
+# HELP improbable_inspection_unique_source_ips The number of unique source IPs seen so far
+# TYPE improbable_inspection_unique_source_ips counter
+improbable_inspection_unique_source_ips{} 1.0
+# HELP jvm_memory_bytes_used Used bytes of a given JVM memory area.
+# TYPE jvm_memory_bytes_used gauge
+jvm_memory_bytes_used{area="heap",} 9.25551552E8
+jvm_memory_bytes_used{area="nonheap",} 1.27708384E8
+# HELP jvm_memory_bytes_committed Committed (bytes) of a given JVM memory area.
+# TYPE jvm_memory_bytes_committed gauge
+jvm_memory_bytes_committed{area="heap",} 1.430781952E9
+jvm_memory_bytes_committed{area="nonheap",} 1.30048E8
+# HELP jvm_memory_bytes_max Maximum (bytes) of a given JVM memory area.
+# TYPE jvm_memory_bytes_max gauge
+jvm_memory_bytes_max{area="heap",} 3.73030912E9
+jvm_memory_bytes_max{area="nonheap",} -1.0
+# HELP jvm_memory_pool_bytes_used Used bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_used gauge
+jvm_memory_pool_bytes_used{pool="Code Cache",} 3.1350528E7
+jvm_memory_pool_bytes_used{pool="Metaspace",} 8.4057944E7
+jvm_memory_pool_bytes_used{pool="Compressed Class Space",} 1.2300104E7
+jvm_memory_pool_bytes_used{pool="PS Eden Space",} 6.14861296E8
+jvm_memory_pool_bytes_used{pool="PS Survivor Space",} 1.24240672E8
+jvm_memory_pool_bytes_used{pool="PS Old Gen",} 1.86449584E8
+# HELP jvm_memory_pool_bytes_committed Limit (bytes) of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_committed gauge
+jvm_memory_pool_bytes_committed{pool="Code Cache",} 3.1981568E7
+jvm_memory_pool_bytes_committed{pool="Metaspace",} 8.5581824E7
+jvm_memory_pool_bytes_committed{pool="Compressed Class Space",} 1.2484608E7
+jvm_memory_pool_bytes_committed{pool="PS Eden Space",} 1.00401152E9
+jvm_memory_pool_bytes_committed{pool="PS Survivor Space",} 1.91889408E8
+jvm_memory_pool_bytes_committed{pool="PS Old Gen",} 2.34881024E8
+# HELP jvm_memory_pool_bytes_max Max (bytes) of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_max gauge
+jvm_memory_pool_bytes_max{pool="Code Cache",} 2.5165824E8
+jvm_memory_pool_bytes_max{pool="Metaspace",} -1.0
+jvm_memory_pool_bytes_max{pool="Compressed Class Space",} 1.073741824E9
+jvm_memory_pool_bytes_max{pool="PS Eden Space",} 1.016070144E9
+jvm_memory_pool_bytes_max{pool="PS Survivor Space",} 1.91889408E8
+jvm_memory_pool_bytes_max{pool="PS Old Gen",} 2.797600768E9
+# HELP grpc_server_msg_sent_total Total number of stream messages sent by the server.
+# TYPE grpc_server_msg_sent_total counter
+grpc_server_msg_sent_total{grpc_type="BIDI_STREAMING",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="TrackingStream",} 14.0
+# HELP grpc_client_started_total Total number of RPCs started on the client.
+# TYPE grpc_client_started_total counter
+grpc_client_started_total{grpc_type="UNARY",grpc_service="improbable.fabric.internal.scaling.ScalingStatsInternalService",grpc_method="GetScalingStats",} 20.0
+grpc_client_started_total{grpc_type="BIDI_STREAMING",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="TrackingStream",} 7.0
+grpc_client_started_total{grpc_type="UNARY",grpc_service="improbable.fabric.internal.BridgeOracleInternalService",grpc_method="RequireWorker",} 8.0
+grpc_client_started_total{grpc_type="UNARY",grpc_service="improbable.fabric.internal.ServiceDiscoveryInternalService",grpc_method="ListLocalServers",} 4.0
+grpc_client_started_total{grpc_type="CLIENT_STREAMING",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="SubscriptionStream",} 8.0
+grpc_client_started_total{grpc_type="UNARY",grpc_service="improbable.service.fabric.GlobalBrokerService",grpc_method="Ping",} 24.0
+# HELP improbable_entity_spatial_query_latency Latency (in sec) of spatial find calls that were *successful*.
+# TYPE improbable_entity_spatial_query_latency histogram
+improbable_entity_spatial_query_latency_bucket{locality="global",le="5.0E-4",} 175.0
+improbable_entity_spatial_query_latency_bucket{locality="global",le="0.001",} 282.0
+improbable_entity_spatial_query_latency_bucket{locality="global",le="0.002",} 350.0
+improbable_entity_spatial_query_latency_bucket{locality="global",le="0.004",} 380.0
+improbable_entity_spatial_query_latency_bucket{locality="global",le="0.008",} 391.0
+improbable_entity_spatial_query_latency_bucket{locality="global",le="0.016",} 394.0
+improbable_entity_spatial_query_latency_bucket{locality="global",le="0.05",} 394.0
+improbable_entity_spatial_query_latency_bucket{locality="global",le="0.1",} 394.0
+improbable_entity_spatial_query_latency_bucket{locality="global",le="0.2",} 394.0
+improbable_entity_spatial_query_latency_bucket{locality="global",le="0.5",} 394.0
+improbable_entity_spatial_query_latency_bucket{locality="global",le="1.0",} 394.0
+improbable_entity_spatial_query_latency_bucket{locality="global",le="+Inf",} 394.0
+improbable_entity_spatial_query_latency_count{locality="global",} 394.0
+improbable_entity_spatial_query_latency_sum{locality="global",} 0.4185638749999999
+improbable_entity_spatial_query_latency_bucket{locality="local",le="5.0E-4",} 800.0
+improbable_entity_spatial_query_latency_bucket{locality="local",le="0.001",} 804.0
+improbable_entity_spatial_query_latency_bucket{locality="local",le="0.002",} 808.0
+improbable_entity_spatial_query_latency_bucket{locality="local",le="0.004",} 810.0
+improbable_entity_spatial_query_latency_bucket{locality="local",le="0.008",} 810.0
+improbable_entity_spatial_query_latency_bucket{locality="local",le="0.016",} 810.0
+improbable_entity_spatial_query_latency_bucket{locality="local",le="0.05",} 810.0
+improbable_entity_spatial_query_latency_bucket{locality="local",le="0.1",} 810.0
+improbable_entity_spatial_query_latency_bucket{locality="local",le="0.2",} 810.0
+improbable_entity_spatial_query_latency_bucket{locality="local",le="0.5",} 810.0
+improbable_entity_spatial_query_latency_bucket{locality="local",le="1.0",} 810.0
+improbable_entity_spatial_query_latency_bucket{locality="local",le="+Inf",} 810.0
+improbable_entity_spatial_query_latency_count{locality="local",} 810.0
+improbable_entity_spatial_query_latency_sum{locality="local",} 0.060339984000000034
+# HELP improbable_network_raknet_sent_bytes Counter of bytes sent over to the given peer.
+# TYPE improbable_network_raknet_sent_bytes counter
+# HELP improbable_routing_global_messages_dropped Number of buffered messages that were dropped.
+# TYPE improbable_routing_global_messages_dropped counter
+improbable_routing_global_messages_dropped{endpoint="EntitySupervisor",message_type="RequestSnapshot$",} 138.0
+# HELP improbable_metrics_user_metrics_produced A measurement of the number of unique timeseries a user published.
+# TYPE improbable_metrics_user_metrics_produced gauge
+improbable_metrics_user_metrics_produced{} 0.0
+# HELP improbable_metrics_user_metrics_dropped A measurement of the number of unique timeseries that the user attempted to publish, but were dropped because they exceeded our user metrics limit.
+# TYPE improbable_metrics_user_metrics_dropped gauge
+improbable_metrics_user_metrics_dropped{} 0.0
